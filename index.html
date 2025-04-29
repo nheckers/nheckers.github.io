@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartending Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bartending Flashcards</h1>
+
+    <!-- Image for the drink -->
+    <div class="card-image">
+      <img id="drink-image" src="images/placeholder.jpg" alt="Drink Image">
+    </div>
+
+    <!-- Question -->
+    <div class="question">
+      <h2 id="question-text">Question will appear here...</h2>
+    </div>
+
+    <!-- Multiple choice options -->
+    <div class="options" id="options-container">
+      <!-- Buttons will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Free response input (optional) -->
+    <div class="free-response">
+      <input type="text" id="user-answer" placeholder="Type your answer here">
+      <button onclick="checkFreeResponse()">Submit</button>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <button onclick="nextCard()">Next Card</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
