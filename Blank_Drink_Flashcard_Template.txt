@@ -1,0 +1,33 @@
+Blank Drink Flashcard Template
+{
+  "section": "Your Section Name Here",
+  "drink": "Drink Name Here",
+  "image": "images/your_image.jpg",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What are the ingredients in a [Drink Name]?",
+      "answer": "Main ingredients listed here, separated by commas"
+    },
+    {
+      "type": "free-response",
+      "question": "How many ounces of [First Ingredient] are used in a [Drink Name]?",
+      "answer": "Amount"
+    },
+    {
+      "type": "free-response",
+      "question": "How many ounces of [Second Ingredient] are used?",
+      "answer": "Amount"
+    },
+    {
+      "type": "free-response",
+      "question": "What is the garnish for a [Drink Name]?",
+      "answer": "Garnish name"
+    },
+    {
+      "type": "free-response",
+      "question": "What type of rim is used for a [Drink Name]?",
+      "answer": "Type of rim (or 'None')"
+    }
+  ]
+}
