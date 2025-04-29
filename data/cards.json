@@ -1,0 +1,45 @@
+{
+    "section": "Mojito",
+    "drink": "Coconut Mojito",
+    "image": "images/coconut_mojito.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Coconut Mojito?",
+        "answer": "Malibu Rum, Coconut Water, Sweet & Sour, Soda Water, Mint Strips, Stevia, Lime Wheel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Malibu Rum are used in a Coconut Mojito?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Coconut Water are used?",
+        "answer": "3"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet and Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Coconut Mojito? (Select 2)",
+        "options": [
+          "Lime Wheel",
+          "Mint Strips",
+          "Orange Peel",
+          "Salt Rim",
+          "Cherry"
+        ],
+        "answer": ["Lime Wheel", "Mint Strips"]
+      }      
+    ]
+  }
+  
