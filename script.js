@@ -1,47 +1,60 @@
+
 let cards = [];
+let shuffledCards = [];
 let currentCard = null;
 let currentQuestionIndex = 0;
+let cardIndex = 0;
 
-// Load all cards from cards.json
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
 async function loadCards() {
   const res = await fetch("data/cards.json");
   cards = await res.json();
+  shuffledCards = shuffleArray(cards);
+  cardIndex = 0;
+  loadNextCard();
+}
 
-  // Pick a random drink (card)
-  const randomIndex = Math.floor(Math.random() * cards.length);
-  currentCard = cards[randomIndex];
+function loadNextCard() {
+  if (cardIndex >= shuffledCards.length) {
+    document.getElementById("question-text").innerText = "🎉 You've completed all drinks!";
+    document.getElementById("drink-image").style.display = "none";
+    document.getElementById("options-container").innerHTML = "";
+    return;
+  }
 
-  // Set drink image and name
+  currentCard = shuffledCards[cardIndex];
+  currentQuestionIndex = 0;
+
   document.getElementById("drink-image").src = currentCard.image;
+  document.getElementById("drink-image").style.display = "block";
   document.getElementById("question-text").innerText = `${currentCard.drink} Quiz`;
 
-  // Display the first question
   displayQuestion();
 }
 
 function displayQuestion() {
   const questionObj = currentCard.questions[currentQuestionIndex];
   const container = document.getElementById("options-container");
-  container.innerHTML = ""; // Clear previous content
+  container.innerHTML = "";
 
   const q = document.createElement("h3");
   q.innerText = questionObj.question;
   container.appendChild(q);
 
   if (questionObj.type === "multiple-choice") {
-    // Generate randomized options (include correct + pull from other drinks)
     const allAnswers = cards
       .filter(c => c.drink !== currentCard.drink)
-      .map(c => {
-        const mc = c.questions.find(q => q.type === "multiple-choice");
-        return mc?.answer;
-      })
+      .map(c => c.questions.find(q => q.type === 'multiple-choice')?.answer)
       .filter(Boolean);
 
-    const randomIncorrects = allAnswers.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const neededIncorrects = 3;
+    const randomIncorrects = allAnswers.sort(() => 0.5 - Math.random()).slice(0, neededIncorrects);
     const options = [...randomIncorrects, questionObj.answer].sort(() => 0.5 - Math.random());
 
-    options.forEach((option) => {
+    options.slice(0, 4).forEach((option) => {
       const btn = document.createElement("button");
       btn.innerText = option;
       btn.onclick = () => checkAnswer(option, questionObj.answer);
@@ -61,7 +74,40 @@ function displayQuestion() {
     };
     container.appendChild(btn);
   } else if (questionObj.type === "multiple-select") {
-    questionObj.options?.forEach((option) => {
+    const correctAnswers = questionObj.answer;
+
+    const distractorPool = cards
+      .filter(card => card !== currentCard)
+      .flatMap(card =>
+        card.questions
+          .filter(q => q.type === "multiple-select")
+          .flatMap(q => q.answer)
+      );
+
+    const uniqueDistractors = [...new Set(distractorPool)].filter(
+      val => !correctAnswers.includes(val)
+    );
+
+    let distractorCount = 4 - correctAnswers.length;
+    if (distractorCount < 0) distractorCount = 0;
+
+    let randomDistractors = uniqueDistractors
+      .sort(() => 0.5 - Math.random())
+      .slice(0, distractorCount);
+
+    if (randomDistractors.length < distractorCount) {
+      const fallback = ["Cherry", "Salt Rim", "Orange Peel", "Cucumber"].filter(
+        val => !correctAnswers.includes(val)
+      );
+      randomDistractors = [...randomDistractors, ...fallback]
+        .slice(0, distractorCount);
+    }
+
+    const allOptions = [...correctAnswers, ...randomDistractors]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4);
+
+    allOptions.forEach((option) => {
       const label = document.createElement("label");
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -79,7 +125,7 @@ function displayQuestion() {
       const selected = Array.from(document.querySelectorAll(".multi-option:checked")).map(
         (c) => c.value
       );
-      checkMultiAnswer(selected, questionObj.answer);
+      checkMultiAnswer(selected, correctAnswers);
     };
     container.appendChild(btn);
   }
@@ -110,7 +156,8 @@ function nextQuestion() {
   if (currentQuestionIndex < currentCard.questions.length) {
     displayQuestion();
   } else {
-    document.getElementById("options-container").innerHTML = "<h2>🎉 Quiz complete!</h2>";
+    cardIndex++;
+    loadNextCard();
   }
 }
 
