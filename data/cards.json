@@ -33,13 +33,104 @@
         "type": "multiple-select",
         "question": "What are the garnishes for a Coconut Mojito? (Select 2)",
         "options": [
-          "Lime Wheel",
+          "Lime Wheel (1)",
           "Mint Strips",
           "Orange Peel",
           "Salt Rim",
           "Cherry"
         ],
-        "answer": ["Lime Wheel", "Mint Strips"]
+        "answer": ["Lime Wheel (1)", "Mint Strips"]
+      }
+    ]
+  },
+  {
+    "section": "Mojitos",
+    "drink": "Pineapple Mojito",
+    "image": "images/pineapple_mojito.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Pineapple Mojito?",
+        "answer": "Sailor Jerry, Mint Syrup, Sweet & Sour, Pineapple Juice, Soda Water, Mint Strips, Lime Wheels, Pineapple Skewer (With Tajin)"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sailor Jerry are used in a Pineapple Mojito?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Mint Syrup are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Pineapple Juice are used?",
+        "answer": "2"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Pineapple Mojito? (Select 3)",
+        "options": [
+          "Lime Wheel (3)",
+          "Pineapple Skewer (With Tajin)",
+          "Mint Strips",
+          "Cucumber"
+        ],
+        "answer": ["Lime Wheel (3)", "Pineapple Skewer (With Tajin)", "Mint Strips"]
+      }
+    ]
+  },
+  {
+    "section": "Mojitos",
+    "drink": "Traditional Mojito",
+    "image": "images/traditional_mojito.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Traditional Mojito?",
+        "answer": "Bicardi Limon, Mint Syrup, Sweet & Sour, Soda Water, Mint Strips, Lime Wheels"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Bicardi Limon are used in a Traditional Mojito?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Mint Syrup are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Traditional Mojito? (Select 2)",
+        "options": [
+          "Lime Wheel (3)",
+          "Pineapple Skewer (With Tajin)",
+          "Mint Strips",
+          "Cucumber"
+        ],
+        "answer": ["Lime Wheel (3)"]
       }
     ]
   }
