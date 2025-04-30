@@ -1,9 +1,14 @@
 [
   {
-    "section": "Mojito",
+    "section": "Mojitos",
     "drink": "Coconut Mojito",
     "image": "images/coconut_mojito.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Coconut Mojito?",
+        "answer": "Malibu Rum"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Coconut Mojito?",
@@ -41,6 +46,11 @@
     "drink": "Pineapple Mojito",
     "image": "images/pineapple_mojito.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Pineapple Mojito?",
+        "answer": "Sailor Jerry"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Pineapple Mojito?",
@@ -85,6 +95,11 @@
     "questions": [
       {
         "type": "multiple-choice",
+        "question": "What is the main alcohol in a Traditional Mojito?",
+        "answer": "Bicardi Limon"
+      },
+      {
+        "type": "multiple-choice",
         "question": "What are the ingredients in a Traditional Mojito?",
         "answer": "Bicardi Limon, Mint Syrup, Sweet & Sour, Soda Water, Mint Strips, Lime Wheels"
       },
@@ -120,6 +135,11 @@
     "drink": "Huckleberry Mule",
     "image": "images/huckleberry_mule.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Huckleberry Mule?",
+        "answer": "Wheatley Vodka"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Huckleberry Mule?",
@@ -159,6 +179,11 @@
     "questions": [
       {
         "type": "multiple-choice",
+        "question": "What is the main alcohol in a Moscow Mule?",
+        "answer": "Wheatley Vodka"
+      },
+      {
+        "type": "multiple-choice",
         "question": "What are the ingredients in a Moscow Mule?",
         "answer": "Wheatley Vodka, Ginger Beer Base, Soda Water, Lime Wedges"
       },
@@ -189,6 +214,11 @@
     "drink": "BackCountry Mule",
     "image": "images/backcountry_mule.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a BackCountry Mule?",
+        "answer": "Jack Daniels Whiskey"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a BackCountry Mule?",
@@ -223,6 +253,11 @@
     "questions": [
       {
         "type": "multiple-choice",
+        "question": "What is the main alcohol in a Irish Mule?",
+        "answer": "Jameson Whiskey"
+      },
+      {
+        "type": "multiple-choice",
         "question": "What are the ingredients in a Irish Mule?",
         "answer": "Jameson Whiskey, Ginger Beer Base, Soda Water, Lime Wheel"
       },
@@ -255,6 +290,11 @@
     "questions": [
       {
         "type": "multiple-choice",
+        "question": "What is the main alcohol in a Cucumber Mint Martini?",
+        "answer": "Cucumber Rain Vodka"
+      },
+      {
+        "type": "multiple-choice",
         "question": "What are the ingredients in a Cucumber Mint Martini?",
         "answer": "Cucumber Rain Vodka, Sweet & Sour, Cucumber Slices, Mint Strips"
       },
@@ -280,6 +320,11 @@
     "drink": "Pink Lemon Drop Martini",
     "image": "images/pink_lemon_drop.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Pink Lemon Drop Martini?",
+        "answer": "Skyy Citrus Vodka"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Pink Lemon Drop Martini?",
@@ -312,6 +357,11 @@
     "drink": "Wild Blueberry Lemon Martini",
     "image": "images/wild_blueberry_lemon.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Wild Blueberry Lemon Martini?",
+        "answer": "Tito's Vodka"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Wild Blueberry Lemon Martini?",
@@ -354,6 +404,11 @@
     "drink": "Cold Brew Martini",
     "image": "images/cold_brew_martini.jpg",
     "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Cold Brew Martini?",
+        "answer": "Tito's Vodka"
+      },
       {
         "type": "multiple-choice",
         "question": "What are the ingredients in a Cold Brew Martini?",
