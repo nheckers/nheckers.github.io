@@ -151,5 +151,239 @@
         "answer": ["Lemon Peel"]
       }
     ]
+  },
+  {
+    "section": "Mules",
+    "drink": "Moscow Mule",
+    "image": "images/moscow_mule.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Moscow Mule?",
+        "answer": "Wheatley Vodka, Ginger Beer Base, Soda Water, Lime Wedges"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Wheatley Vodka are used in a Moscow Mule?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Ginger Beer Base are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Moscow Mule? (Select 1)",
+        "answer": ["Lime Wedge (2)"]
+      }
+    ]
+  },
+  {
+    "section": "Mules",
+    "drink": "BackCountry Mule",
+    "image": "images/backcountry_mule.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a BackCountry Mule?",
+        "answer": "Jack Daniels Whiskey, Ginger Beer Base, Soda Water, Orange Wedge"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Jack Daniels Whiskey are used in a BackCountry Mule?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Ginger Beer Base are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a BackCountry Mule? (Select 1)",
+        "answer": ["Orange Wedge"]
+      }
+    ]
+  },
+  {
+    "section": "Mules",
+    "drink": "Irish Mule",
+    "image": "images/irish_mule.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Irish Mule?",
+        "answer": "Jameson Whiskey, Ginger Beer Base, Soda Water, Lime Wheel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Jack Daniels Whiskey are used in a BackCountry Mule?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Ginger Beer Base are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Irish Mule? (Select 1)",
+        "answer": ["Lime Wheel"]
+      }
+    ]
+  },
+  {
+    "section": "Straight Up (Martinis)",
+    "drink": "Cucumber Mint Martini",
+    "image": "images/cucumber_mint.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Cucumber Mint Martini?",
+        "answer": "Cucumber Rain Vodka, Sweet & Sour, Cucumber Slices, Mint Strips"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Cucumber Rain Vodka are used in a Cucumber Mint Martini?",
+        "answer": "2"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Cucumber Mint Martini? (Select 2)",
+        "answer": ["Mint Strips", "Cucmber Slices (3)"]
+      }
+    ]
+  },
+  {
+    "section": "Straight Up (Martinis)",
+    "drink": "Pink Lemon Drop Martini",
+    "image": "images/pink_lemon_drop.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Pink Lemon Drop Martini?",
+        "answer": "Skyy Citrus Vodka, Triple Sec, Pink Lemonade, Lemon Peel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Skyy Citrus Vodka are used in a Pink Lemon Drop Martini?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Triple Sec are used?",
+        "answer": "0.75"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Pink Lemonade are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Pink Lemon Drop Martini? (Select 2)",
+        "answer": ["Sugar Rim", "Lemon Peel"]
+      }
+    ]
+  },
+  {
+    "section": "Straight Up (Martinis)",
+    "drink": "Wild Blueberry Lemon Martini",
+    "image": "images/wild_blueberry_lemon.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Wild Blueberry Lemon Martini?",
+        "answer": "Tito's Vodka, Sweet & Sour, Pineapple Juice, Simple Syrup, Blue Berries, Lemon Peel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Tito's Vodka are used in a Wild Blueberry Lemon Martini?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Pineapple Juice are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Simple Syrup are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many blueberries are used?",
+        "answer": "handfull"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Wild Blueberry Lemon Martini? (Select 1)",
+        "answer": ["Lemon Peel"]
+      }
+    ]
+  },
+  {
+    "section": "Straight Up (Martinis)",
+    "drink": "Cold Brew Martini",
+    "image": "images/cold_brew_martini.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Cold Brew Martini?",
+        "answer": "Tito's Vodka, Cold Brew, Creme de Cacao, Kahlua, Aquafaba"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Tito's Vodka are used in a Cold Brew Martini?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Cold Brew are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Creme de Cacao are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Kahlua are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Aquafaba are used?",
+        "answer": "0.5"
+      }
+    ]
   }
 ]
