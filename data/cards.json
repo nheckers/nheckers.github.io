@@ -440,5 +440,471 @@
         "answer": "0.5"
       }
     ]
+  },
+  {
+    "section": "Margaritas",
+    "drink": "Classic Margarita",
+    "image": "images/classic_marg.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Classic Margarita?",
+        "answer": "Lunazul Reposado Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Classic Margarita?",
+        "answer": "Lunazul Reposado Tequila, Triple Sec, Sweet & Sour, Lime Wheel, Salt Rim"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Lunazul Reposado Tequila are used in a Classic Margarita?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Triple Sec are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Classic Margarita? (Select 2)",
+        "answer": ["Lime Wheel", "Salt Rim"]
+      }
+    ]
+  },
+  {
+    "section": "Margaritas",
+    "drink": "Mango Chile Margarita",
+    "image": "images/mango_chile_marg.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Mango Chile Margarita?",
+        "answer": "Altos Reposado"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Mango Chile Margarita?",
+        "answer": "Altos Reposado, Ancho Reyes Chile Liqueur, Mango Juice, Sweet & Sour, Tajin Rim, Lime Wheel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Altos Reposado are used in a Mango Chile Margarita?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Ancho Reyes Chile Liqueur are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Mango Juice are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Mango Chile Margarita? (Select 2)",
+        "answer": ["Lime Wheel", "Tajin Rim"]
+      }
+    ]
+  },
+  {
+    "section": "Margaritas",
+    "drink": "Watermelon Margarita",
+    "image": "images/watermelon_marg.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Watermelon Margarita?",
+        "answer": "Lunazul Reposado Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Watermelon Margarita?",
+        "answer": "Lunazul Reposado Tequila, Triple Sec, Sweet & Sour, Chamoy/Tajin Rim, Lime Wheel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Watermelon Margarita Batch is used in a Watermelon Margarita?",
+        "answer": "4.5"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Watermelon Margarita? (Select 2)",
+        "answer": ["Lime Wheel", "Chamoy/Tajin Rim"]
+      }
+    ]
+  },
+  {
+    "section": "Margaritas",
+    "drink": "Jalapeno Cucumber Margarita",
+    "image": "images/jalepeno_cucumber_marg.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Jalapeno Cucumber Margarita?",
+        "answer": "Lunazul Reposado Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Jalapeno Cucumber Margarita?",
+        "answer": "Lunazul Reposado Tequila, Sweet & Sour, Midori, Jalapeno Cucumber Margarita Mix, Salt Rim, Cucumber Slice, Tamarind Candy Straw"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Lunazul Reposado Tequila is used in a Jalapeno Cucumber Margarita?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Sweet & Sour is used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Midori is used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Jalapeno Cucumber Margarita Mix is used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Jalapeno Cucumber Margarita? (Select 3)",
+        "answer": ["Cucumber Slice", "Salt Rim", "Tamarind Candy Straw"]
+      }
+    ]
+  },
+  {
+    "section": "Margaritas",
+    "drink": "Cadillac Margarita",
+    "image": "images/cadilla_marg.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Cadillac Margarita?",
+        "answer": "Altos Reposado Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Cadillac Margarita?",
+        "answer": "Altos Reposado Tequila, Triple Sec, Sweet & Sour, Grand Marnier(Float), Lime Wheel, Orange Wedge, Salt Rim"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Altos Reposado Tequila are used in a Cadillac Margarita?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Triple Sec are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "2"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Grand Marnier(Float) are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Cadillac Margarita? (Select 3)",
+        "answer": ["Lime Wheel", "Salt Rim", "Orange Wedge"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Patron Paloma",
+    "image": "images/patron_paloma.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Patron Paloma?",
+        "answer": "Patron Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Patron Paloma?",
+        "answer": "Patron Tequila, Triple Sec, Sweet & Sour, Grapfruit Juice, Soda Water, Lime Wheel (Dehydrated), Salt Rim"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Patron Tequila are used in a Patron Paloma?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Triple Sec are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Grapfruit Juice are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Patron Paloma? (Select 2)",
+        "answer": ["Lime Wheel", "Salt Rim"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Blue Hawaiian",
+    "image": "images/blue_hawaiian.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Blue Hawaiian?",
+        "answer": "Ketel One Vodka"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Blue Hawaiian?",
+        "answer": "Ketel One Vodka, Myer's White Rum, Blue Curacao, Island Mix, Orange Peel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Blue Hawaiian Batch are used in a Blue Hawaiian?",
+        "answer": "6"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Blue Hawaiian? (Select 1)",
+        "answer": ["Orange Peel"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Rum Barrel Punch",
+    "image": "images/rum_barrel.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Rum Barrel Punch?",
+        "answer": "Rum"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Rum Barrel Punch?",
+        "answer": "Captain Morgan Rum, Malibu Coconut Rum, Cruzan Rum, Island Punch Mix, Pomegranate Juice, Pineapple Leaf, Pineapple Skewer"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Captain Morgan Rum are used in a Rum Barrel Punch?",
+        "answer": "0.75"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Malibu Coconut Rum are used?",
+        "answer": "0.75"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Cruzan Rum are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Island Punch Mix are used?",
+        "answer": "3"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Pomegranate Juice are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Rum Barrel Punch? (Select 2)",
+        "answer": ["Pineapple Leaf", "Pineapple Skewer"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Tequila Old Fashioned",
+    "image": "images/tequila_old.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Tequila Old Fashioned?",
+        "answer": "Altos Reposado Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Tequila Old Fashioned?",
+        "answer": "Altos Reposado Tequila, Ancho Reyes Chile Liqeur, Creme de Cacao, Cointreau, Orange Juice, Bitters, Agave, Cinnamon, Chocolate Orange Skewer"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Tequila Old Fashioned Batch are used in a Tequila Old Fashioned?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Tequila Old Fashioned? (Select 1)",
+        "answer": ["Chocolate Orange Skewer"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Smoke Maple Bacon Old Fashioned",
+    "image": "images/smoked_maple.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Smoke Maple Bacon Old Fashioned?",
+        "answer": "Tincup Whiskey"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Smoke Maple Bacon Old Fashioned?",
+        "answer": "Tincup Whiskey, Bacon Candy"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Smoked Maple Bacon Old Fashioned Batch are used in a Smoke Maple Bacon Old Fashioned?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Smoke Maple Bacon Old Fashioned? (Select 1)",
+        "answer": ["Bacon Candy"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Elderflower Lemonade Spritz",
+    "image": "images/elderflower.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Elderflower Lemonade Spritz?",
+        "answer": "Aviation Gin"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Elderflower Lemonade Spritz?",
+        "answer": "Aviation Gin, St. Germaine, Triple Sec, Lemonade Base, Blure Pea Tea Concentrate, Soda Water, Lemon Peel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Elderflower Lemonade Batch are used in a Elderflower Lemonade Spritz?",
+        "answer": "3"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Elderflower Lemonade Spritz? (Select 1)",
+        "answer": ["Lemon Peel"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Cowboy Colada",
+    "image": "images/cowboy_colada.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Cowboy Colada?",
+        "answer": "Rum"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Cowboy Colada?",
+        "answer": "Sailor Jerry Rum, Myer's Rum, Malibu Rum, Coconut Water, Pineapple Juice, Sweet & Sour, Lemon Juice, Milk, Pineapple Leaf, Pineapple Skewer, Carbonated Sugar"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of the Cowboy Colada Batch are used in a Cowboy Colada?",
+        "answer": "6"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Cowboy Colada? (Select 2)",
+        "answer": ["Pineapple Leaf", "Pineapple Skewer (With Carbonated Sugar)"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Limoncello Basil Spritz",
+    "image": "images/limoncello.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Limoncello Basil Spritz?",
+        "answer": "Limoncello"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Limoncello Basil Spritz?",
+        "answer": "Limoncello, St. Germaine, Freixenet, Soda Water, Lemon Wedge (No Seeds), Basil Leaf"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Limoncello are used in a Limoncello Basil Spritz?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of St. Germaine are used?",
+        "answer": "0.25"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Freixenet are used?",
+        "answer": "2"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Limoncello Basil Spritz? (Select 2)",
+        "answer": ["Lemon Wedge (No Seeds)", "Basil Leaf"]
+      }
+    ]
   }
 ]
