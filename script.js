@@ -1,6 +1,6 @@
 
 let cards = [];
-let shuffledCards = [];
+let filteredCards = [];
 let currentCard = null;
 let currentQuestionIndex = 0;
 let cardIndex = 0;
@@ -12,20 +12,53 @@ function shuffleArray(array) {
 async function loadCards() {
   const res = await fetch("data/cards.json");
   cards = await res.json();
-  shuffledCards = shuffleArray(cards);
+
+  const uniqueSections = [...new Set(cards.map(card => card.section))];
+  showSectionMenu(uniqueSections);
+}
+
+function showSectionMenu(sections) {
+  const container = document.getElementById("options-container");
+  container.innerHTML = "";
+
+  const title = document.createElement("h2");
+  title.innerText = "📚 Choose a section to study:";
+  container.appendChild(title);
+
+  const allBtn = document.createElement("button");
+  allBtn.innerText = "All Drinks";
+  allBtn.onclick = () => startQuiz(cards);
+  container.appendChild(allBtn);
+
+  sections.forEach(section => {
+    const btn = document.createElement("button");
+    btn.innerText = section;
+    btn.onclick = () => {
+      const sectionCards = cards.filter(card => card.section === section);
+      startQuiz(sectionCards);
+    };
+    container.appendChild(btn);
+  });
+
+  document.getElementById("drink-image").style.display = "none";
+  document.getElementById("question-text").innerText = "🍹 Bartending Flashcards";
+}
+
+function startQuiz(selectedCards) {
+  filteredCards = shuffleArray(selectedCards);
   cardIndex = 0;
   loadNextCard();
 }
 
 function loadNextCard() {
-  if (cardIndex >= shuffledCards.length) {
-    document.getElementById("question-text").innerText = "🎉 You've completed all drinks!";
+  if (cardIndex >= filteredCards.length) {
+    document.getElementById("question-text").innerText = "🎉 You've completed all selected drinks!";
     document.getElementById("drink-image").style.display = "none";
     document.getElementById("options-container").innerHTML = "";
     return;
   }
 
-  currentCard = shuffledCards[cardIndex];
+  currentCard = filteredCards[cardIndex];
   currentQuestionIndex = 0;
 
   document.getElementById("drink-image").src = currentCard.image;
@@ -40,18 +73,41 @@ function displayQuestion() {
   const container = document.getElementById("options-container");
   container.innerHTML = "";
 
+  const drinkImage = document.getElementById("drink-image");
+  if (questionObj.type === "multiple-select") {
+    drinkImage.style.display = "none";
+  } else {
+    drinkImage.style.display = "block";
+  }
+
   const q = document.createElement("h3");
   q.innerText = questionObj.question;
   container.appendChild(q);
 
   if (questionObj.type === "multiple-choice") {
+    // Determine question category
+    const isMainAlcohol = questionObj.question.toLowerCase().includes("main alcohol");
+    const isIngredientList = questionObj.question.toLowerCase().includes("ingredients");
+
     const allAnswers = cards
       .filter(c => c.drink !== currentCard.drink)
-      .map(c => c.questions.find(q => q.type === 'multiple-choice')?.answer)
+      .flatMap(c =>
+        c.questions
+          .filter(q =>
+            q.type === 'multiple-choice' &&
+            ((isMainAlcohol && q.question.toLowerCase().includes("main alcohol")) ||
+             (isIngredientList && q.question.toLowerCase().includes("ingredients")))
+          )
+          .map(q => q.answer)
+      )
       .filter(Boolean);
 
     const neededIncorrects = 3;
-    const randomIncorrects = allAnswers.sort(() => 0.5 - Math.random()).slice(0, neededIncorrects);
+    const randomIncorrects = allAnswers
+      .filter(a => a !== questionObj.answer)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, neededIncorrects);
+
     const options = [...randomIncorrects, questionObj.answer].sort(() => 0.5 - Math.random());
 
     options.slice(0, 4).forEach((option) => {
