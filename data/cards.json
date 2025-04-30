@@ -32,13 +32,6 @@
       {
         "type": "multiple-select",
         "question": "What are the garnishes for a Coconut Mojito? (Select 2)",
-        "options": [
-          "Lime Wheel (1)",
-          "Mint Strips",
-          "Orange Peel",
-          "Salt Rim",
-          "Cherry"
-        ],
         "answer": ["Lime Wheel (1)", "Mint Strips"]
       }
     ]
@@ -81,12 +74,6 @@
       {
         "type": "multiple-select",
         "question": "What are the garnishes for a Pineapple Mojito? (Select 3)",
-        "options": [
-          "Lime Wheel (3)",
-          "Pineapple Skewer (With Tajin)",
-          "Mint Strips",
-          "Cucumber"
-        ],
         "answer": ["Lime Wheel (3)", "Pineapple Skewer (With Tajin)", "Mint Strips"]
       }
     ]
@@ -124,13 +111,44 @@
       {
         "type": "multiple-select",
         "question": "What are the garnishes for a Traditional Mojito? (Select 2)",
-        "options": [
-          "Lime Wheel (3)",
-          "Pineapple Skewer (With Tajin)",
-          "Mint Strips",
-          "Cucumber"
-        ],
-        "answer": ["Lime Wheel (3)"]
+        "answer": ["Lime Wheel (3)", "Mint Strips"]
+      }
+    ]
+  },
+  {
+    "section": "Mules",
+    "drink": "Huckleberry Mule",
+    "image": "images/huckleberry_mule.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Huckleberry Mule?",
+        "answer": "Wheatley Vodka, Ginger Beer Base, Huckleberry Puree, Soda Water, Lemon Peel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Wheatley Vodka are used in a Huckleberry Mule?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Ginger Beer Base are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Huckleberry Puree are used?",
+        "answer": "1"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "3"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Huckleberry Mule? (Select 1)",
+        "answer": ["Lemon Peel"]
       }
     ]
   }
