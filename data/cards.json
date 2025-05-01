@@ -906,5 +906,197 @@
         "answer": ["Lemon Wedge (No Seeds)", "Basil Leaf"]
       }
     ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Prickly Pear Sloshie",
+    "image": "images/prickly_sloshie.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Prickly Pear Sloshie?",
+        "answer": "Pantalones Tequila"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Prickly Pear Sloshie?",
+        "answer": "Pantalones Tequila, Triple Sec, Sweet & Sour, Prickly Pear Puree, Lime Wheel"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Pantalones Tequila are used in a Prickly Pear Sloshie?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Triple Sec are used?",
+        "answer": "0.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sweet & Sour are used?",
+        "answer": "1.5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Prickly Pear Puree are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Prickly Pear Sloshie? (Select 1)",
+        "answer": ["Lime Wheel"]
+      }
+    ]
+  },
+  {
+    "section": "Brunch",
+    "drink": "White Peach Sangria",
+    "image": "images/white_peach.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a White Peach Sangria?",
+        "answer": "White Wine"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a White Peach Sangria?",
+        "answer": "White Wine, Peach Juice, Peach Shnapps, Simple Syrup, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of White Sangria Mix are used in a White Peach Sangria?",
+        "answer": "6"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a White Peach Sangria? (Select 3)",
+        "answer": ["Lemon Wedge", "Lime Wedge","Orange Wedge (3)"]
+      }
+    ]
+  },
+  {
+    "section": "Brunch",
+    "drink": "Red Pomegranate Sangria",
+    "image": "images/red_pom.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Red Pomegranate Sangria?",
+        "answer": "Red Wine"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Red Pomegranate Sangria?",
+        "answer": "Red Wine, Pomegranate Juice, Brandy, Simple Syrup, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Red Pomegranate Mix are used in a Red Pomegranate Sangria?",
+        "answer": "6"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Red Pomegranate Sangria? (Select 3)",
+        "answer": ["Lemon Wedge", "Lime Wedge","Orange Wedge (3)"]
+      }
+    ]
+  },
+  {
+    "section": "Brunch",
+    "drink": "Raspberry Rose Sangria",
+    "image": "images/raspberry_rose.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Raspberry Rose Sangria?",
+        "answer": "Tinto Rey Rose"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Raspberry Rose Sangria?",
+        "answer": "Tinto Rey Rose, Cranberry Juice, Brandy, Creme De Cassis, Raspberry Puree, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Raspberry Rose Mix are used in a Raspberry Rose Sangria?",
+        "answer": "6"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "2"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Raspberry Rose Sangria? (Select 3)",
+        "answer": ["Lemon Wedge", "Lime Wedge","Orange Wedge (3)"]
+      }
+    ]
+  },
+  {
+    "section": "House Libations",
+    "drink": "Rose Aperol Spritz",
+    "image": "images/raspberry_rose.jpg",
+    "questions": [
+      {
+        "type": "multiple-choice",
+        "question": "What is the main alcohol in a Rose Aperol Spritz?",
+        "answer": "Tinto Rey Rose"
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What are the ingredients in a Rose Aperol Spritz?",
+        "answer": "Tinto Rey Rose, Aperol, Sweet & Sour, Strawberry Puree, Soda Water, Orange Peel, Strawberry"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Rose Aperol Batch are used in a Rose Aperol Spritz?",
+        "answer": "5"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "1"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Rose Aperol Spritz? (Select 2)",
+        "answer": ["Orange Peel", "Strawberry"]
+      }
+    ]
+  },
+  {
+    "section": "Brunch",
+    "drink": "Sangria Pitchers",
+    "image": ["images/white_pitcher.jpg", "images/red_pitcher.jpg", "images/raspberry_pitcher.jpg"],
+    "questions": [
+      {
+        "type": "free-response",
+        "question": "How many ounces of Sangria Mix are used in a Sangria Pitcher?",
+        "answer": "22"
+      },
+      {
+        "type": "free-response",
+        "question": "How many ounces of Soda Water are used?",
+        "answer": "6"
+      },
+      {
+        "type": "multiple-select",
+        "question": "What are the garnishes for a Sangria Pitcher? (Select 3)",
+        "answer": ["Orange Wedge (8)", "Lemon Wedge (4)", "Lime Wedge (4)"]
+      }
+    ]
   }
 ]
