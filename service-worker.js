@@ -1,24 +1,16 @@
 
-self.addEventListener("install", event => {
-    event.waitUntil(
-      caches.open("bartending-flashcards").then(cache => {
-        return cache.addAll([
-          "./",
-          "./index.html",
-          "./style.css",
-          "./script.js",
-          "./data/cards.json"
-        ]);
-      })
-    );
-    self.skipWaiting();
-  });
-  
-  self.addEventListener("fetch", event => {
-    event.respondWith(
-      caches.match(event.request).then(response => {
-        return response || fetch(event.request);
-      })
-    );
-  });
-  
+self.addEventListener("install", (event) => {
+  self.skipWaiting(); // Activate immediately
+});
+
+self.addEventListener("activate", (event) => {
+  clients.claim(); // Take control of the page immediately
+});
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      return caches.match(event.request);
+    })
+  );
+});
