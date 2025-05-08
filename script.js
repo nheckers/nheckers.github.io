@@ -140,8 +140,14 @@ function displayQuestion() {
     });
   } else if (questionObj.type === "free-response") {
     const input = document.createElement("input");
+    if (questionObj.question.toLowerCase().includes("how many ounces")) {
+    input.type = "number";
+    input.step = "any";
+    input.inputMode = "decimal";
+  } else {
     input.type = "text";
-    input.id = "user-answer";
+  }
+  input.id = "user-answer";
     container.appendChild(input);
 
     const btn = document.createElement("button");
@@ -194,10 +200,7 @@ function checkAnswer(selected, correct) {
   if (Array.isArray(correct)) {
     correct = correct.join(", ");
   }
-  
-  const normalize = str => str.toLowerCase().split(',').map(s => s.trim()).sort().join(',');
-  if (normalize(selected) === normalize(correct)) {
-
+  if (selected.toLowerCase() === correct.toLowerCase()) {
     alert("✅ Correct!");
   } else {
     alert(`❌ Incorrect. Correct answer: ${correct}`);
