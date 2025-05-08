@@ -14,6 +14,15 @@ function shuffleArray(array) {
 
 // Load cards and generate section list
 async function loadCards() {
+  // Add version tag to UI
+  const versionTag = document.createElement("div");
+  versionTag.innerText = "Flashcard App v1.2.3";
+  versionTag.style.fontSize = "14px";
+  versionTag.style.color = "#666";
+  versionTag.style.textAlign = "center";
+  versionTag.style.marginBottom = "12px";
+  document.querySelector(".container").prepend(versionTag);
+
   const res = await fetch("data/cards.json");
   cards = await res.json();
 
