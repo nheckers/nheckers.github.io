@@ -4,49 +4,55 @@ let filteredCards = [];
 let currentCard = null;
 let currentQuestionIndex = 0;
 let cardIndex = 0;
+let selectedDifficulty = "medium";
+let selectedSections = [];
 
+// Utility
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
+// Load cards and generate section list
 async function loadCards() {
   const res = await fetch("data/cards.json");
   cards = await res.json();
 
   const uniqueSections = [...new Set(cards.map(card => card.section))];
-  showSectionMenu(uniqueSections);
-}
+  const sectionContainer = document.getElementById("section-options");
 
-function showSectionMenu(sections) {
-  const container = document.getElementById("options-container");
-  container.innerHTML = "";
-
-  const title = document.createElement("h2");
-  title.innerText = "📚 Choose a section to study:";
-  container.appendChild(title);
-
-  const allBtn = document.createElement("button");
-  allBtn.innerText = "All Drinks";
-  allBtn.onclick = () => startQuiz(cards);
-  container.appendChild(allBtn);
-
-  sections.forEach(section => {
-    const btn = document.createElement("button");
-    btn.innerText = section;
-    btn.onclick = () => {
-      const sectionCards = cards.filter(card => card.section === section);
-      startQuiz(sectionCards);
-    };
-    container.appendChild(btn);
+  uniqueSections.forEach(section => {
+    const label = document.createElement("label");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = section;
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(section));
+    sectionContainer.appendChild(label);
+    sectionContainer.appendChild(document.createElement("br"));
   });
 
-  document.getElementById("drink-image").style.display = "none";
-  document.getElementById("question-text").innerText = "🍹 Bartending Flashcards";
+  document.getElementById("start-quiz-btn").onclick = initializeQuiz;
 }
 
-function startQuiz(selectedCards) {
-  filteredCards = shuffleArray(selectedCards);
+// Collect selections and start quiz
+function initializeQuiz() {
+  const checkedBoxes = Array.from(document.querySelectorAll("#section-options input:checked"));
+  selectedSections = checkedBoxes.map(cb => cb.value);
+
+  const difficultyRadio = document.querySelector("input[name='difficulty']:checked");
+  if (difficultyRadio) {
+    selectedDifficulty = difficultyRadio.value;
+  }
+
+  filteredCards = cards.filter(card => selectedSections.includes(card.section));
+  filteredCards = shuffleArray(filteredCards);
   cardIndex = 0;
+
+  document.getElementById("setup-screen").style.display = "none";
+  document.querySelector(".card-image").style.display = "block";
+  document.querySelector(".question").style.display = "block";
+  document.getElementById("options-container").style.display = "block";
+
   loadNextCard();
 }
 
@@ -62,9 +68,34 @@ function loadNextCard() {
   currentQuestionIndex = 0;
 
   document.getElementById("drink-image").src = currentCard.image;
-  document.getElementById("drink-image").style.display = "block";
   document.getElementById("question-text").innerText = `${currentCard.drink} Quiz`;
 
+  generateQuizForCard(currentCard);
+}
+
+function generateQuizForCard(card) {
+  const questions = [];
+
+  const questionMap = {
+    "main": q => q.question.toLowerCase().includes("main alcohol"),
+    "ingredients": q => q.question.toLowerCase().includes("ingredients"),
+    "amounts": q => q.question.toLowerCase().includes("how many ounces"),
+    "garnish": q => q.question.toLowerCase().includes("garnish")
+  };
+
+  const main = card.questions.find(q => questionMap.main(q));
+  if (main) questions.push(main);
+
+  const ingredients = card.questions.find(q => questionMap.ingredients(q) && q.difficulty === selectedDifficulty);
+  if (ingredients) questions.push(ingredients);
+
+  const amounts = card.questions.filter(q => questionMap.amounts(q));
+  questions.push(...amounts);
+
+  const garnish = card.questions.find(q => questionMap.garnish(q) && q.difficulty === selectedDifficulty);
+  if (garnish) questions.push(garnish);
+
+  currentCard.questions = questions;
   displayQuestion();
 }
 
@@ -85,32 +116,23 @@ function displayQuestion() {
   container.appendChild(q);
 
   if (questionObj.type === "multiple-choice") {
-    // Determine question category
-    const isMainAlcohol = questionObj.question.toLowerCase().includes("main alcohol");
-    const isIngredientList = questionObj.question.toLowerCase().includes("ingredients");
+    const isMain = questionObj.question.toLowerCase().includes("main alcohol");
+    const isGarnish = questionObj.question.toLowerCase().includes("garnish");
 
-    const allAnswers = cards
+    const pool = cards
       .filter(c => c.drink !== currentCard.drink)
-      .flatMap(c =>
-        c.questions
-          .filter(q =>
-            q.type === 'multiple-choice' &&
-            ((isMainAlcohol && q.question.toLowerCase().includes("main alcohol")) ||
-             (isIngredientList && q.question.toLowerCase().includes("ingredients")))
-          )
-          .map(q => q.answer)
-      )
-      .filter(Boolean);
+      .flatMap(c => c.questions.filter(q =>
+        q.type === "multiple-choice" &&
+        (
+          (isMain && q.question.toLowerCase().includes("main alcohol")) ||
+          (isGarnish && q.question.toLowerCase().includes("garnish")) ||
+          (!isMain && !isGarnish && q.question.toLowerCase().includes("ingredients"))
+        )
+      ).map(q => q.answer));
 
-    const neededIncorrects = 3;
-    const randomIncorrects = allAnswers
-      .filter(a => a !== questionObj.answer)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, neededIncorrects);
+    const options = shuffleArray([...pool.filter(a => a !== questionObj.answer).slice(0, 3), questionObj.answer]);
 
-    const options = [...randomIncorrects, questionObj.answer].sort(() => 0.5 - Math.random());
-
-    options.slice(0, 4).forEach((option) => {
+    options.forEach(option => {
       const btn = document.createElement("button");
       btn.innerText = option;
       btn.onclick = () => checkAnswer(option, questionObj.answer);
@@ -131,39 +153,22 @@ function displayQuestion() {
     container.appendChild(btn);
   } else if (questionObj.type === "multiple-select") {
     const correctAnswers = questionObj.answer;
+    const isGarnish = questionObj.question.toLowerCase().includes("garnish");
 
-    const distractorPool = cards
-      .filter(card => card !== currentCard)
-      .flatMap(card =>
-        card.questions
-          .filter(q => q.type === "multiple-select")
-          .flatMap(q => q.answer)
+    const pool = cards
+      .filter(c => c !== currentCard)
+      .flatMap(c =>
+        c.questions.filter(q =>
+          q.type === "multiple-select" &&
+          (isGarnish ? q.question.toLowerCase().includes("garnish") : q.question.toLowerCase().includes("ingredient"))
+        ).flatMap(q => q.answer)
       );
 
-    const uniqueDistractors = [...new Set(distractorPool)].filter(
-      val => !correctAnswers.includes(val)
-    );
+    const uniqueDistractors = [...new Set(pool)].filter(a => !correctAnswers.includes(a));
+    const distractors = shuffleArray(uniqueDistractors).slice(0, Math.max(4, 9 - correctAnswers.length));
+    const allOptions = shuffleArray([...correctAnswers, ...distractors]);
 
-    let distractorCount = 4 - correctAnswers.length;
-    if (distractorCount < 0) distractorCount = 0;
-
-    let randomDistractors = uniqueDistractors
-      .sort(() => 0.5 - Math.random())
-      .slice(0, distractorCount);
-
-    if (randomDistractors.length < distractorCount) {
-      const fallback = ["Cherry", "Salt Rim", "Orange Peel", "Cucumber"].filter(
-        val => !correctAnswers.includes(val)
-      );
-      randomDistractors = [...randomDistractors, ...fallback]
-        .slice(0, distractorCount);
-    }
-
-    const allOptions = [...correctAnswers, ...randomDistractors]
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 4);
-
-    allOptions.forEach((option) => {
+    allOptions.forEach(option => {
       const label = document.createElement("label");
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -178,9 +183,7 @@ function displayQuestion() {
     const btn = document.createElement("button");
     btn.innerText = "Submit";
     btn.onclick = () => {
-      const selected = Array.from(document.querySelectorAll(".multi-option:checked")).map(
-        (c) => c.value
-      );
+      const selected = Array.from(document.querySelectorAll(".multi-option:checked")).map(c => c.value);
       checkMultiAnswer(selected, correctAnswers);
     };
     container.appendChild(btn);
@@ -188,7 +191,13 @@ function displayQuestion() {
 }
 
 function checkAnswer(selected, correct) {
-  if (selected.toLowerCase() === correct.toLowerCase()) {
+  if (Array.isArray(correct)) {
+    correct = correct.join(", ");
+  }
+  
+  const normalize = str => str.toLowerCase().split(',').map(s => s.trim()).sort().join(',');
+  if (normalize(selected) === normalize(correct)) {
+
     alert("✅ Correct!");
   } else {
     alert(`❌ Incorrect. Correct answer: ${correct}`);
@@ -197,8 +206,8 @@ function checkAnswer(selected, correct) {
 }
 
 function checkMultiAnswer(selectedArray, correctArray) {
-  const correct = correctArray.sort().join(",");
-  const selected = selectedArray.sort().join(",");
+  const correct = correctArray.map(s => s.toLowerCase()).sort().join(",");
+  const selected = selectedArray.map(s => s.toLowerCase()).sort().join(",");
   if (selected === correct) {
     alert("✅ Correct!");
   } else {

@@ -5,36 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bartending Flashcards</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- PWA Manifest and Theme -->
-<link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#4f46e5" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#4f46e5" />
 </head>
 <body>
   <div class="container">
     <h1>Bartending Flashcards</h1>
 
+    <!-- Section & difficulty selection -->
+    <div id="setup-screen">
+      <h2>Select Sections</h2>
+      <div id="section-options">
+        <!-- JS will dynamically generate checkboxes here -->
+      </div>
+
+      <h2>Select Difficulty</h2>
+      <div id="difficulty-options">
+        <label><input type="radio" name="difficulty" value="easy" /> Easy</label><br />
+        <label><input type="radio" name="difficulty" value="medium" /> Medium</label><br />
+        <label><input type="radio" name="difficulty" value="hard" /> Hard</label>
+      </div>
+
+      <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+
     <!-- Drink image -->
-    <div class="card-image">
+    <div class="card-image" style="display:none;">
       <img id="drink-image" src="images/placeholder.jpg" alt="Drink Image" width="300" />
     </div>
 
     <!-- Question header -->
-    <div class="question">
+    <div class="question" style="display:none;">
       <h2 id="question-text">Loading quiz...</h2>
     </div>
 
     <!-- Dynamic question content (buttons, inputs, checkboxes) -->
-    <div id="options-container"></div>
+    <div id="options-container" style="display:none;"></div>
   </div>
 
   <script src="script.js" defer></script>
-  <!-- Register Service Worker -->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log("✅ Service Worker Registered"))
-      .catch(err => console.error("Service Worker Error:", err));
-  }
-</script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("✅ Service Worker Registered"))
+        .catch(err => console.error("Service Worker Error:", err));
+    }
+  </script>
 </body>
 </html>
