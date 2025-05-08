@@ -16,7 +16,7 @@ function shuffleArray(array) {
 async function loadCards() {
   // Add version tag to UI
   const versionTag = document.createElement("div");
-  versionTag.innerText = "Flashcard App v1.2.3";
+  versionTag.innerText = "Flashcard App v1.2.4";
   versionTag.style.fontSize = "14px";
   versionTag.style.color = "#666";
   versionTag.style.textAlign = "center";
