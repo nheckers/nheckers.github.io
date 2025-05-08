@@ -1,5 +1,8 @@
 
+let rawData;
 let cards = [];
+let ingredientsPool = [];
+let garnishesPool = [];
 let filteredCards = [];
 let currentCard = null;
 let currentQuestionIndex = 0;
@@ -7,24 +10,16 @@ let cardIndex = 0;
 let selectedDifficulty = "medium";
 let selectedSections = [];
 
-// Utility
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-// Load cards and generate section list
 async function loadCards() {
-  // Add version tag to UI
-  const versionTag = document.createElement("div");
-  versionTag.innerText = "Flashcard App v1.2.4";
-  versionTag.style.fontSize = "14px";
-  versionTag.style.color = "#666";
-  versionTag.style.textAlign = "center";
-  versionTag.style.marginBottom = "12px";
-  document.querySelector(".container").prepend(versionTag);
-
   const res = await fetch("data/cards.json");
-  cards = await res.json();
+  rawData = await res.json();
+  cards = rawData.drinks;
+  ingredientsPool = rawData.ingredients_pool;
+  garnishesPool = rawData.garnishes_pool;
 
   const uniqueSections = [...new Set(cards.map(card => card.section))];
   const sectionContainer = document.getElementById("section-options");
@@ -40,10 +35,17 @@ async function loadCards() {
     sectionContainer.appendChild(document.createElement("br"));
   });
 
+  const versionTag = document.createElement("div");
+  versionTag.innerText = "Flashcard App v1.3.0";
+  versionTag.style.fontSize = "14px";
+  versionTag.style.color = "#666";
+  versionTag.style.textAlign = "center";
+  versionTag.style.marginBottom = "12px";
+  document.querySelector(".container").prepend(versionTag);
+
   document.getElementById("start-quiz-btn").onclick = initializeQuiz;
 }
 
-// Collect selections and start quiz
 function initializeQuiz() {
   const checkedBoxes = Array.from(document.querySelectorAll("#section-options input:checked"));
   selectedSections = checkedBoxes.map(cb => cb.value);
@@ -150,13 +152,14 @@ function displayQuestion() {
   } else if (questionObj.type === "free-response") {
     const input = document.createElement("input");
     if (questionObj.question.toLowerCase().includes("how many ounces")) {
-    input.type = "number";
-    input.step = "any";
-    input.inputMode = "decimal";
-  } else {
-    input.type = "text";
-  }
-  input.id = "user-answer";
+      input.type = "number";
+      input.step = "any";
+      input.inputMode = "decimal";
+    } else {
+      input.type = "text";
+    }
+    input.id = "user-answer";
+    input.style.fontSize = "18px";
     container.appendChild(input);
 
     const btn = document.createElement("button");
@@ -170,17 +173,9 @@ function displayQuestion() {
     const correctAnswers = questionObj.answer;
     const isGarnish = questionObj.question.toLowerCase().includes("garnish");
 
-    const pool = cards
-      .filter(c => c !== currentCard)
-      .flatMap(c =>
-        c.questions.filter(q =>
-          q.type === "multiple-select" &&
-          (isGarnish ? q.question.toLowerCase().includes("garnish") : q.question.toLowerCase().includes("ingredient"))
-        ).flatMap(q => q.answer)
-      );
-
-    const uniqueDistractors = [...new Set(pool)].filter(a => !correctAnswers.includes(a));
-    const distractors = shuffleArray(uniqueDistractors).slice(0, Math.max(4, 9 - correctAnswers.length));
+    const pool = isGarnish ? garnishesPool : ingredientsPool;
+    const distractors = shuffleArray(pool.filter(item => !correctAnswers.includes(item)))
+                          .slice(0, Math.max(4, 9 - correctAnswers.length));
     const allOptions = shuffleArray([...correctAnswers, ...distractors]);
 
     allOptions.forEach(option => {
@@ -206,13 +201,11 @@ function displayQuestion() {
 }
 
 function checkAnswer(selected, correct) {
-  if (Array.isArray(correct)) {
-    correct = correct.join(", ");
-  }
-  if (selected.toLowerCase() === correct.toLowerCase()) {
+  const normalize = str => str.toLowerCase().split(',').map(s => s.trim()).sort().join(',');
+  if (normalize(selected) === normalize(Array.isArray(correct) ? correct.join(',') : correct)) {
     alert("✅ Correct!");
   } else {
-    alert(`❌ Incorrect. Correct answer: ${correct}`);
+    alert(`❌ Incorrect. Correct answer: ${Array.isArray(correct) ? correct.join(", ") : correct}`);
   }
   nextQuestion();
 }
