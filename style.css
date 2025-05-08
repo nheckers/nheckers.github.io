@@ -80,10 +80,11 @@ input[type="radio"] {
   transform: scale(1.2);
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
   width: 100%;
   padding: 10px 12px;
-  font-size: 16px;
+  font-size: 18px; /* Prevent iPhone zoom */
   border: 1px solid #d1d5db;
   border-radius: 8px;
   margin: 10px 0 16px;
