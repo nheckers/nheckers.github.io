@@ -44,6 +44,7 @@ async function loadCards() {
   document.querySelector(".container").prepend(versionTag);
 
   document.getElementById("start-quiz-btn").onclick = initializeQuiz;
+  setupDrinkSearch();
 }
 
 function initializeQuiz() {
@@ -232,3 +233,71 @@ function nextQuestion() {
 }
 
 window.onload = loadCards;
+
+
+
+// === Fuzzy Drink Search with Fuse.js ===
+let fuse;
+
+function setupDrinkSearch() {
+  const drinkSearchInput = document.getElementById("drink-search-input");
+  const suggestionBox = document.getElementById("search-suggestion");
+  const drinkInfoBox = document.getElementById("drink-info");
+
+  if (!cards.length) return;
+
+  fuse = new Fuse(cards, {
+    keys: ['drink'],
+    threshold: 0.4
+  });
+
+  drinkSearchInput.addEventListener("input", (e) => {
+    const query = e.target.value.trim();
+    drinkInfoBox.innerHTML = "";
+    suggestionBox.innerHTML = "";
+
+    if (!query) return;
+
+    const results = fuse.search(query);
+    if (results.length > 0) {
+      const bestMatch = results[0].item;
+      suggestionBox.innerHTML = `Showing results for: <strong>${bestMatch.drink}</strong>`;
+      showDrinkInfo(bestMatch);
+    } else {
+      suggestionBox.innerHTML = "No match found.";
+    }
+  });
+}
+
+function showDrinkInfo(drink) {
+  const drinkInfoBox = document.getElementById("drink-info");
+  const content = [];
+
+  content.push(`<h3>${drink.drink}</h3>`);
+  const mainAlcohol = drink.questions.find(q => q.question.toLowerCase().includes("main alcohol"));
+  if (mainAlcohol) {
+    content.push(`<p><strong>Main Alcohol:</strong> ${mainAlcohol.answer}</p>`);
+  }
+
+  const ingredients = drink.questions.find(q => q.question.toLowerCase().includes("ingredients"));
+  if (ingredients) {
+    content.push(`<p><strong>Ingredients:</strong> ${ingredients.answer}</p>`);
+  }
+
+  const amounts = drink.questions.filter(q => q.question.toLowerCase().includes("how many ounces"));
+  if (amounts.length) {
+    content.push("<p><strong>Measurements:</strong></p><ul>");
+    amounts.forEach(q => {
+      content.push(`<li>${q.question.replace("How many ounces of", "").replace("are used", "").trim()}: ${q.answer} oz</li>`);
+    });
+    content.push("</ul>");
+  }
+
+  const garnish = drink.questions.find(q => q.question.toLowerCase().includes("garnish"));
+  if (garnish) {
+    const garVal = Array.isArray(garnish.answer) ? garnish.answer.join(", ") : garnish.answer;
+    content.push(`<p><strong>Garnish:</strong> ${garVal}</p>`);
+  }
+
+  drinkInfoBox.innerHTML = content.join("");
+}
