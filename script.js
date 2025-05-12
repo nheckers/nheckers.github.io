@@ -273,7 +273,9 @@ function showDrinkInfo(drink) {
   const drinkInfoBox = document.getElementById("drink-info");
   const content = [];
 
-  content.push(`<h3>${drink.drink}</h3>`);
+  content.push(`<div style="text-align: center;"><img src="${drink.image}" alt="${drink.drink}" style="max-width: 200px; border-radius: 8px; margin-bottom: 1em;"></div>`);
+  content.push(`<h3 style="text-align: center;">${drink.drink}</h3>`);
+
   const mainAlcohol = drink.questions.find(q => q.question.toLowerCase().includes("main alcohol"));
   if (mainAlcohol) {
     content.push(`<p><strong>Main Alcohol:</strong> ${mainAlcohol.answer}</p>`);
