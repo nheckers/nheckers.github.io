@@ -7,12 +7,24 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#4f46e5" />
+
+  <!-- Fuse.js for fuzzy search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
 </head>
 <body>
   <div class="container">
     <h1>Bartending Flashcards</h1>
 
     <!-- Section & difficulty selection -->
+
+    <!-- Drink search -->
+    <div id="search-drink" style="margin-bottom: 1em;">
+      <input type="text" id="drink-search-input" placeholder="Search for a drink..." style="width: 100%; padding: 0.5em; font-size: 16px;" />
+      <div id="search-suggestion" style="margin-top: 0.5em; font-style: italic;"></div>
+      <div id="drink-info" style="margin-top: 1em; border: 1px solid #ccc; padding: 1em; border-radius: 6px; background-color: #fafafa;"></div>
+    </div>
+
     <div id="setup-screen">
       <h2>Select Sections</h2>
       <div id="section-options">
