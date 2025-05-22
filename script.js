@@ -36,7 +36,7 @@ async function loadCards() {
   });
 
   const versionTag = document.createElement("div");
-  versionTag.innerText = "Flashcard App v1.3.0";
+  versionTag.innerText = "Flashcard App v1.3.1";
   versionTag.style.fontSize = "14px";
   versionTag.style.color = "#666";
   versionTag.style.textAlign = "center";
@@ -290,7 +290,7 @@ function showDrinkInfo(drink) {
   if (amounts.length) {
     content.push("<p><strong>Measurements:</strong></p><ul>");
     amounts.forEach(q => {
-      content.push(`<li>${q.question.replace("How many ounces of", "").replace("are used", "").trim()}: ${q.answer} oz</li>`);
+      content.push(`<li>${q.question.replace("How many ounces of", "Ounces of").replace("are", "").replace("?", "").trim()}: ${q.answer} oz</li>`);
     });
     content.push("</ul>");
   }
