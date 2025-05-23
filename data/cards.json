@@ -2588,7 +2588,7 @@
     {
       "section": "Brunch",
       "drink": "Peach Bellini",
-      "image": "images/peach_bellini.jpg",
+      "image": "images/mimosa.jpg",
       "questions": [
         {
           "type": "multiple-choice",
@@ -2600,7 +2600,7 @@
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the ingredients in a Peach Bellini?",
-          "answer": "Freixenet, Peach Juice"
+          "answer": "Freixenet, Peach Juice, Peach Schnapps"
         },
         {
           "type": "multiple-select",
@@ -2608,6 +2608,7 @@
           "question": "Select all ingredients in a Peach Bellini:",
           "answer": [
             "Freixenet",
+            "Peach Schnapps",
             "Peach Juice"
           ]
         },
@@ -2617,6 +2618,7 @@
           "question": "Type all ingredients in a Peach Bellini (comma-separated):",
           "answer": [
             "Freixenet",
+            "Peach Schnapps",
             "Peach Juice"
           ]
         },
@@ -2624,6 +2626,11 @@
           "type": "free-response",
           "question": "How many ounces of Freixenet are used?",
           "answer": "3"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Peach Schnapps are used?",
+          "answer": "0.5"
         },
         {
           "type": "free-response",
@@ -2641,21 +2648,22 @@
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What is the main alcohol in a Michelada?",
-          "answer": "Beer"
+          "answer": "Whoa Nelli Lager"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the ingredients in a Michelada?",
-          "answer": "Beer, Michelada Mix, Lime Wedge"
+          "answer": "Whoa Nelli Lager, Bloody Mary Mix, Lime Juice, Lime Wedge"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select all ingredients in a Michelada:",
           "answer": [
-            "Beer",
-            "Michelada Mix",
+            "Whoa Nelli Lager",
+            "Bloody Mary Mix",
+            "Lime Juice",
             "Lime Wedge"
           ]
         },
@@ -2664,38 +2672,40 @@
           "difficulty": "hard",
           "question": "Type all ingredients in a Michelada (comma-separated):",
           "answer": [
-            "Beer",
-            "Michelada Mix",
+            "Whoa Nelli Lager",
+            "MicheBloody Mary Mix",
+            "Lime Juice",
             "Lime Wedge"
           ]
         },
         {
           "type": "free-response",
           "question": "How many ounces of Beer are used?",
-          "answer": "1"
+          "answer": "12"
         },
         {
           "type": "free-response",
           "question": "How many ounces of Michelada Mix are used?",
-          "answer": "1"
+          "answer": "3"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lime Wedge are used?",
-          "answer": "1"
+          "question": "How many ounces of Lime Juice are used?",
+          "answer": "0.5"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Michelada?",
-          "answer": "Tajin Rim"
+          "answer": "Tajin Rim, Lime Wedge"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select the garnishes for a Michelada:",
           "answer": [
-            "Tajin Rim"
+            "Tajin Rim",
+            "Lime Wedge"
           ]
         },
         {
@@ -2703,92 +2713,8 @@
           "difficulty": "hard",
           "question": "Type all garnishes for a Michelada (comma-separated):",
           "answer": [
-            "Tajin Rim"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "Michelada, candied bacon",
-      "image": "images/michelada_bacon.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Michelada, candied bacon?",
-          "answer": "Beer"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Michelada, candied bacon?",
-          "answer": "Beer, Michelada Mix, Lime Wedge, Candied Bacon"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Michelada, candied bacon:",
-          "answer": [
-            "Beer",
-            "Michelada Mix",
-            "Lime Wedge",
-            "Candied Bacon"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Michelada, candied bacon (comma-separated):",
-          "answer": [
-            "Beer",
-            "Michelada Mix",
-            "Lime Wedge",
-            "Candied Bacon"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Beer are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Michelada Mix are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Lime Wedge are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Candied Bacon are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Michelada, candied bacon?",
-          "answer": "Tajin Rim, Bacon Candy"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Michelada, candied bacon:",
-          "answer": [
             "Tajin Rim",
-            "Bacon Candy"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Michelada, candied bacon (comma-separated):",
-          "answer": [
-            "Tajin Rim",
-            "Bacon Candy"
+            "Lime Wedge"
           ]
         }
       ]
@@ -2802,25 +2728,25 @@
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What is the main alcohol in a Hair of the Dog?",
-          "answer": "Ketel One Vodka"
+          "answer": "Tito's Vodka"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the ingredients in a Hair of the Dog?",
-          "answer": "Ketel One Vodka, Bloody Mary Mix, Lime Wedge, Celery Stick, Pickle, Olive"
+          "answer": "Tito's Vodka, Bloody Mary Mix, Lime Wedge, Celery Stick, Green Beans, Olives"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select all ingredients in a Hair of the Dog:",
           "answer": [
-            "Ketel One Vodka",
+            "Tito's Vodka",
             "Bloody Mary Mix",
             "Lime Wedge",
             "Celery Stick",
-            "Pickle",
-            "Olive"
+            "Green Beans",
+            "Olives"
           ]
         },
         {
@@ -2828,49 +2754,29 @@
           "difficulty": "hard",
           "question": "Type all ingredients in a Hair of the Dog (comma-separated):",
           "answer": [
-            "Ketel One Vodka",
+            "Tito's Vodka",
             "Bloody Mary Mix",
             "Lime Wedge",
             "Celery Stick",
-            "Pickle",
-            "Olive"
+            "Green Beans",
+            "Olives"
           ]
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Ketel One Vodka are used?",
+          "question": "How many ounces of Tito's Vodka are used?",
           "answer": "1.5"
         },
         {
           "type": "free-response",
           "question": "How many ounces of Bloody Mary Mix are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Lime Wedge are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Celery Stick are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pickle are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Olive are used?",
-          "answer": "1"
+          "answer": "5"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Hair of the Dog?",
-          "answer": "Celery Stick, Lime Wedge"
+          "answer": "Celery Stick, Lime Wedge, Green Beans, Olivess"
         },
         {
           "type": "multiple-select",
@@ -2878,6 +2784,8 @@
           "question": "Select the garnishes for a Hair of the Dog:",
           "answer": [
             "Celery Stick",
+            "Green Beans",
+            "Olives",
             "Lime Wedge"
           ]
         },
@@ -2887,36 +2795,34 @@
           "question": "Type all garnishes for a Hair of the Dog (comma-separated):",
           "answer": [
             "Celery Stick",
+            "Green Beans",
+            "Olives",
             "Lime Wedge"
           ]
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Strawberry Citrus Refresher",
       "image": "images/strawberry_citrus_refresher.jpg",
       "questions": [
         {
           "type": "multiple-choice",
           "difficulty": "easy",
-          "question": "What is the main alcohol in a Strawberry Citrus Refresher?",
-          "answer": "None"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
           "question": "What are the ingredients in a Strawberry Citrus Refresher?",
-          "answer": "Strawberry Puree, Lemonade Base, Lemon Wedge"
+          "answer": "Sweet & Sour, Sprite, Soda Water, Strawberry Puree, Strawberry Skewer"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select all ingredients in a Strawberry Citrus Refresher:",
           "answer": [
+            "Sweet & Sour",
+            "Sprite",
+            "Soda Water",
             "Strawberry Puree",
-            "Lemonade Base",
-            "Lemon Wedge"
+            "Strawberry Skewer"
           ]
         },
         {
@@ -2924,38 +2830,45 @@
           "difficulty": "hard",
           "question": "Type all ingredients in a Strawberry Citrus Refresher (comma-separated):",
           "answer": [
+            "Sweet & Sour",
+            "Sprite",
+            "Soda Water",
             "Strawberry Puree",
-            "Lemonade Base",
-            "Lemon Wedge"
+            "Strawberry Skewer"
           ]
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Strawberry Puree are used?",
-          "answer": "1"
+          "question": "How many ounces of Sweet & Sour are used?",
+          "answer": "2"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lemonade Base are used?",
+          "question": "How many ounces of Sprite are used?",
           "answer": "3"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lemon Wedge are used?",
-          "answer": "1"
+          "question": "How many ounces of Soda Water are used?",
+          "answer": "3"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Strawberry Puree are used?",
+          "answer": "1.5"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Strawberry Citrus Refresher?",
-          "answer": "Lemon Wedge"
+          "answer": "Strawberry Skewer"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select the garnishes for a Strawberry Citrus Refresher:",
           "answer": [
-            "Lemon Wedge"
+            "Strawberry Skewer"
           ]
         },
         {
@@ -2963,36 +2876,32 @@
           "difficulty": "hard",
           "question": "Type all garnishes for a Strawberry Citrus Refresher (comma-separated):",
           "answer": [
-            "Lemon Wedge"
+            "Strawberry Skewer"
           ]
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Cucumber Lemon Refresher",
       "image": "images/cucumber_lemon_refresher.jpg",
       "questions": [
         {
           "type": "multiple-choice",
           "difficulty": "easy",
-          "question": "What is the main alcohol in a Cucumber Lemon Refresher?",
-          "answer": "None"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
           "question": "What are the ingredients in a Cucumber Lemon Refresher?",
-          "answer": "Cucumber Slice, Lemonade Base, Lemon Wedge"
+          "answer": "Sweet & Sour, Simple Syrup, Soda Water, Cucumber Slices (4), Lemon Wedges (2)"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select all ingredients in a Cucumber Lemon Refresher:",
           "answer": [
-            "Cucumber Slice",
-            "Lemonade Base",
-            "Lemon Wedge"
+            "Sweet & Sour",
+            "Simple Syrup",
+            "Soda Water",
+            "Cucumber Slices (3)",
+            "Lemon Wedges (2)"
           ]
         },
         {
@@ -3000,38 +2909,41 @@
           "difficulty": "hard",
           "question": "Type all ingredients in a Cucumber Lemon Refresher (comma-separated):",
           "answer": [
-            "Cucumber Slice",
-            "Lemonade Base",
-            "Lemon Wedge"
+            "Sweet & Sour",
+            "Simple Syrup",
+            "Soda Water",
+            "Cucumber Slices (3)",
+            "Lemon Wedges (2)"
           ]
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Cucumber Slice are used?",
+          "question": "How many ounces of Sweet & Sour are used?",
           "answer": "3"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lemonade Base are used?",
-          "answer": "3"
+          "question": "How many ounces of Simple Syrup are used?",
+          "answer": "2"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lemon Wedge are used?",
-          "answer": "1"
+          "question": "How many ounces of Soda Water are used?",
+          "answer": "5"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Cucumber Lemon Refresher?",
-          "answer": "Lemon Wedge"
+          "answer": "Cucumber Slices (3), Lemon Wedges (2)"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select the garnishes for a Cucumber Lemon Refresher:",
           "answer": [
-            "Lemon Wedge"
+            "Cucumber Slices (3)",
+            "Lemon Wedges (2)"
           ]
         },
         {
@@ -3039,27 +2951,22 @@
           "difficulty": "hard",
           "question": "Type all garnishes for a Cucumber Lemon Refresher (comma-separated):",
           "answer": [
-            "Lemon Wedge"
+            "Cucumber Slices (3)",
+            "Lemon Wedges (2)"
           ]
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Tropical Refresher",
       "image": "images/tropical_refresher.jpg",
       "questions": [
         {
           "type": "multiple-choice",
           "difficulty": "easy",
-          "question": "What is the main alcohol in a Tropical Refresher?",
-          "answer": "None"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
           "question": "What are the ingredients in a Tropical Refresher?",
-          "answer": "Island Mix, Lemonade Base, Lime Wedge"
+          "answer": "Island Mix, Pomegranate Juice, Soda Water, Pina Colada Mix, Mint Sprig"
         },
         {
           "type": "multiple-select",
@@ -3067,8 +2974,10 @@
           "question": "Select all ingredients in a Tropical Refresher:",
           "answer": [
             "Island Mix",
-            "Lemonade Base",
-            "Lime Wedge"
+            "Pomegranate Juice",
+            "Soda Water",
+            "Pina Colada Mix",
+            "Mint Sprig"
           ]
         },
         {
@@ -3077,37 +2986,44 @@
           "question": "Type all ingredients in a Tropical Refresher (comma-separated):",
           "answer": [
             "Island Mix",
-            "Lemonade Base",
-            "Lime Wedge"
+            "Pomegranate Juice",
+            "Soda Water",
+            "Pina Colada Mix",
+            "Mint Sprig"
           ]
         },
         {
           "type": "free-response",
           "question": "How many ounces of Island Mix are used?",
-          "answer": "1"
+          "answer": "5"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lemonade Base are used?",
+          "question": "How many ounces of Soda Water are used?",
           "answer": "3"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Lime Wedge are used?",
+          "question": "How many ounces of Pomegranate Juice are used?",
           "answer": "1"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Pina Colada Mix are used?",
+          "answer": "0.5"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Tropical Refresher?",
-          "answer": "Lime Wedge"
+          "answer": "Mint Sprig"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select the garnishes for a Tropical Refresher:",
           "answer": [
-            "Lime Wedge"
+            "Mint Sprig"
           ]
         },
         {
@@ -3115,22 +3031,16 @@
           "difficulty": "hard",
           "question": "Type all garnishes for a Tropical Refresher (comma-separated):",
           "answer": [
-            "Lime Wedge"
+            "Mint Sprig"
           ]
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Cold Brew Coffee",
       "image": "images/cold_brew.jpg",
       "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Cold Brew Coffee?",
-          "answer": "None"
-        },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
@@ -3156,26 +3066,20 @@
         {
           "type": "free-response",
           "question": "How many ounces of Cold Brew are used?",
-          "answer": "12"
+          "answer": "10"
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Chilled Mint Latte",
       "image": "images/chilled_mint_latte.jpg",
       "questions": [
         {
           "type": "multiple-choice",
           "difficulty": "easy",
-          "question": "What is the main alcohol in a Chilled Mint Latte?",
-          "answer": "None"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
           "question": "What are the ingredients in a Chilled Mint Latte?",
-          "answer": "Cold Brew, Mint Syrup, Milk"
+          "answer": "Cold Brew, Mint Syrup, Ice Cream Base, Whipped Cream, Mint Sprig"
         },
         {
           "type": "multiple-select",
@@ -3184,7 +3088,9 @@
           "answer": [
             "Cold Brew",
             "Mint Syrup",
-            "Milk"
+            "Ice Cream Base", 
+            "Whipped Cream", 
+            "Mint Sprig"
           ]
         },
         {
@@ -3194,13 +3100,15 @@
           "answer": [
             "Cold Brew",
             "Mint Syrup",
-            "Milk"
+            "Ice Cream Base", 
+            "Whipped Cream", 
+            "Mint Sprig"
           ]
         },
         {
           "type": "free-response",
           "question": "How many ounces of Cold Brew are used?",
-          "answer": "8"
+          "answer": "7"
         },
         {
           "type": "free-response",
@@ -3209,37 +3117,54 @@
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Milk are used?",
-          "answer": "3"
+          "question": "How many ounces of Ice Cream Base are used?",
+          "answer": "2"
+        },
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What are the garnishes for a Tropical Refresher?",
+          "answer": "Whipped Cream, Mint Sprig"
+        },
+        {
+          "type": "multiple-select",
+          "difficulty": "medium",
+          "question": "Select the garnishes for a Tropical Refresher:",
+          "answer": [
+            "Whipped Cream",
+            "Mint Sprig"
+          ]
+        },
+        {
+          "type": "free-response",
+          "difficulty": "hard",
+          "question": "Type all garnishes for a Tropical Refresher (comma-separated):",
+          "answer": [
+            "Whipped Cream",
+            "Mint Sprig"
+          ]
         }
       ]
     },
     {
-      "section": "Brunch",
+      "section": "Non-Alcoholics",
       "drink": "Red Bull Mango-lada",
       "image": "images/red_bull_mango_lada.jpg",
       "questions": [
         {
           "type": "multiple-choice",
           "difficulty": "easy",
-          "question": "What is the main alcohol in a Red Bull Mango-lada?",
-          "answer": "None"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
           "question": "What are the ingredients in a Red Bull Mango-lada?",
-          "answer": "Mango Juice, Island Punch Mix, Red Bull, Tamarind Candy Straw"
+          "answer": "Red Bull, Mango Puree, Lime Wheel"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select all ingredients in a Red Bull Mango-lada:",
           "answer": [
-            "Mango Juice",
-            "Island Punch Mix",
             "Red Bull",
-            "Tamarind Candy Straw"
+            "Mango Puree", 
+            "Lime Wheel"
           ]
         },
         {
@@ -3247,44 +3172,33 @@
           "difficulty": "hard",
           "question": "Type all ingredients in a Red Bull Mango-lada (comma-separated):",
           "answer": [
-            "Mango Juice",
-            "Island Punch Mix",
             "Red Bull",
-            "Tamarind Candy Straw"
+            "Mango Puree", 
+            "Lime Wheel"
           ]
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Mango Juice are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Island Punch Mix are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
           "question": "How many ounces of Red Bull are used?",
-          "answer": "1"
+          "answer": "8.4"
         },
         {
           "type": "free-response",
-          "question": "How many ounces of Tamarind Candy Straw are used?",
-          "answer": "1"
+          "question": "How many ounces of Mango Puree are used?",
+          "answer": "2"
         },
         {
           "type": "multiple-choice",
           "difficulty": "easy",
           "question": "What are the garnishes for a Red Bull Mango-lada?",
-          "answer": "Tamarind Candy Straw"
+          "answer": "Lime Wheel"
         },
         {
           "type": "multiple-select",
           "difficulty": "medium",
           "question": "Select the garnishes for a Red Bull Mango-lada:",
           "answer": [
-            "Tamarind Candy Straw"
+            "Lime Wheel"
           ]
         },
         {
@@ -3292,7 +3206,7 @@
           "difficulty": "hard",
           "question": "Type all garnishes for a Red Bull Mango-lada (comma-separated):",
           "answer": [
-            "Tamarind Candy Straw"
+            "Lime Wheel"
           ]
         }
       ]
