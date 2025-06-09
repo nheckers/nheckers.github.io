@@ -803,6 +803,74 @@
     },
     {
       "section": "Straight Up (Martinis)",
+      "drink": "Cold Brew Martini",
+      "image": "images/cold_brew_martini.jpg",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What is the main alcohol in a Cold Brew Martini?",
+          "answer": "Tito's Vodka"
+        },
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What are the ingredients in a Cold Brew Martini?",
+          "answer": "Tito's Vodka, Cold Brew, Creme de Cacao, Kahlua, Aquafaba"
+        },
+        {
+          "type": "multiple-select",
+          "difficulty": "medium",
+          "question": "Select all ingredients in a Cold Brew Martini:",
+          "answer": [
+            "Tito's Vodka",
+            "Cold Brew",
+            "Creme de Cacao",
+            "Kahlua",
+            "Aquafaba"
+          ]
+        },
+        {
+          "type": "free-response",
+          "difficulty": "hard",
+          "question": "Type all ingredients in a Cold Brew Martini (comma-separated):",
+          "answer": [
+            "Tito's Vodka",
+            "Cold Brew",
+            "Creme de Cacao",
+            "Kahlua",
+            "Aquafaba"
+          ]
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Tito's Vodka are used in a Cold Brew Martini?",
+          "answer": "1.5"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Cold Brew are used?",
+          "answer": "1.5"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Creme de Cacao are used?",
+          "answer": "0.5"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Kahlua are used?",
+          "answer": "0.5"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Aquafaba are used?",
+          "answer": "0.5"
+        }
+      ]
+    },
+    {
+      "section": "Straight Up (Martinis)",
       "drink": "Pink Lemon Drop Martini",
       "image": "images/pink_lemon_drop.jpg",
       "questions": [
@@ -3207,6 +3275,77 @@
           "question": "Type all garnishes for a Red Bull Mango-lada (comma-separated):",
           "answer": [
             "Lime Wheel"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Popular Drinks",
+      "drink": "Westside Manhattan",
+      "image": "images/westside_manhattan.jpg",
+      "questions": [
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What is the main alcohol in a Westside Manhattan?",
+          "answer": "High West Bourbon"
+        },
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What are the ingredients in a Westside Manhattan?",
+          "answer": "High West Bourbon, Vermouth, Cherry Skewer"
+        },
+        {
+          "type": "multiple-select",
+          "difficulty": "medium",
+          "question": "Select all ingredients in a Westside Manhattan:",
+          "answer": [
+            "High West Bourbon",
+            "Vermouth",
+            "Cherry Skewer"
+          ]
+        },
+        {
+          "type": "free-response",
+          "difficulty": "hard",
+          "question": "Type all ingredients in a Westside Manhattan (comma-separated):",
+          "answer": [
+            "High West Bourbon",
+            "Vermouth",
+            "Cherry Skewer"
+          ]
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of High West Bourbon are used?",
+          "answer": "2"
+        },
+        {
+          "type": "free-response",
+          "question": "How many ounces of Vermouth are used?",
+          "answer": "0.5"
+        },
+        {
+          "type": "multiple-choice",
+          "difficulty": "easy",
+          "question": "What is the garnish for a Westside Manhattan?",
+          "answer": "Cherry Skewer"
+        },
+        {
+          "type": "multiple-select",
+          "difficulty": "medium",
+          "question": "Select the garnish for a Westside Manhattan:",
+          "answer": [
+            "Cherry Skewer"
+          ]
+        },
+        {
+          "type": "free-response",
+          "difficulty": "hard",
+          "question": "Type all garnishes for a Westside Manhattan (comma-separated):",
+          "answer": [
+            "Cherry Skewer"
           ]
         }
       ]
