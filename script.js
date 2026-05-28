@@ -125,7 +125,7 @@ async function loadCards() {
     ingredientsPool = [...ingSet];
     garnishesPool = [...garnSet];
 
-    document.getElementById("version-tag").innerText = "v2.0.0";
+    document.getElementById("version-tag").innerText = "v2.0.1";
 
     // Build section pill checkboxes
     const uniqueSections = [...new Set(cards.map(c => c.section))];
