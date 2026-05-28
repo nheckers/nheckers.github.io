@@ -1,3354 +1,514 @@
 {
-  "ingredients_pool": [
-    "Agave",
-    "Altos Reposado",
-    "Altos Reposado Tequila",
-    "Ancho Reyes Chile Liqeur",
-    "Ancho Reyes Chile Liqueur",
-    "Aperol",
-    "Aviation Gin",
-    "Bacon Candy",
-    "Basil Leaf",
-    "Bicardi Limon",
-    "Bitters",
-    "Blue Berries",
-    "Blue Curacao",
-    "Blure Pea Tea Concentrate",
-    "Brandy",
-    "Captain Morgan Rum",
-    "Carbonated Sugar",
-    "Chamoy/Tajin Rim",
-    "Chocolate Orange Skewer",
-    "Cinnamon",
-    "Coconut Water",
-    "Cointreau",
-    "Cranberry Juice",
-    "Creme De Cassis",
-    "Creme de Cacao",
-    "Cruzan Rum",
-    "Cucumber Rain Vodka",
-    "Cucumber Slice",
-    "Cucumber Slices",
-    "Freixenet",
-    "Ginger Beer Base",
-    "Grand Marnier(Float)",
-    "Grapfruit Juice",
-    "Huckleberry Puree",
-    "Island Mix",
-    "Island Punch Mix",
-    "Jack Daniels Whiskey",
-    "Jalapeno Cucumber Margarita Mix",
-    "Jameson Whiskey",
-    "Ketel One Vodka",
-    "Lemon Juice",
-    "Lemon Peel",
-    "Lemon Wedge",
-    "Lemon Wedge (No Seeds)",
-    "Lemonade Base",
-    "Lime Wedge",
-    "Lime Wedges",
-    "Lime Wheel",
-    "Lime Wheel (Dehydrated)",
-    "Lime Wheels",
-    "Limoncello",
-    "Lunazul Reposado Tequila",
-    "Malibu Coconut Rum",
-    "Malibu Rum",
-    "Mango Juice",
-    "Midori",
-    "Milk",
-    "Mint Strips",
-    "Mint Syrup",
-    "Myer's Rum",
-    "Myer's White Rum",
-    "Orange Juice",
-    "Orange Peel",
-    "Orange Wedge",
-    "Pantalones Tequila",
-    "Patron Tequila",
-    "Peach Juice",
-    "Peach Shnapps",
-    "Pineapple Juice",
-    "Pineapple Leaf",
-    "Pineapple Skewer",
-    "Pineapple Skewer (With Tajin)",
-    "Pink Lemonade",
-    "Pomegranate Juice",
-    "Prickly Pear Puree",
-    "Raspberry Puree",
-    "Red Wine",
-    "Sailor Jerry",
-    "Sailor Jerry Rum",
-    "Salt Rim",
-    "Simple Syrup",
-    "Skyy Citrus Vodka",
-    "Soda Water",
-    "St. Germaine",
-    "Stevia",
-    "Strawberry",
-    "Strawberry Puree",
-    "Sweet & Sour",
-    "Tajin Rim",
-    "Tamarind Candy Straw",
-    "Tincup Whiskey",
-    "Tinto Rey Rose",
-    "Tito's Vodka",
-    "Triple Sec",
-    "Wheatley Vodka",
-    "White Wine"
-  ],
-  "garnishes_pool": [
-    "Bacon Candy",
-    "Basil Leaf",
-    "Chamoy/Tajin Rim",
-    "Chocolate Orange Skewer",
-    "Cucmber Slices (3)",
-    "Cucumber Slice",
-    "Lemon Peel",
-    "Lemon Wedge",
-    "Lemon Wedge (No Seeds)",
-    "Lime Wedge",
-    "Lime Wedge (2)",
-    "Lime Wheel",
-    "Lime Wheel (1)",
-    "Lime Wheel (3)",
-    "Mint Strips",
-    "Orange Peel",
-    "Orange Wedge",
-    "Orange Wedge (3)",
-    "Pineapple Leaf",
-    "Pineapple Skewer",
-    "Pineapple Skewer (With Carbonated Sugar)",
-    "Pineapple Skewer (With Tajin)",
-    "Salt Rim",
-    "Strawberry",
-    "Sugar Rim",
-    "Tajin Rim",
-    "Tamarind Candy Straw"
-  ],
   "drinks": [
     {
-      "section": "Mojitos",
-      "drink": "Coconut Mojito",
-      "image": "images/coconut_mojito.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Coconut Mojito?",
-          "answer": "Malibu Rum"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Coconut Mojito?",
-          "answer": "Malibu Rum, Coconut Water, Sweet & Sour, Soda Water, Mint Strips, Stevia, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Coconut Mojito:",
-          "answer": [
-            "Malibu Rum",
-            "Coconut Water",
-            "Sweet & Sour",
-            "Soda Water",
-            "Mint Strips",
-            "Stevia",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Coconut Mojito (comma-separated):",
-          "answer": [
-            "Malibu Rum",
-            "Coconut Water",
-            "Sweet & Sour",
-            "Soda Water",
-            "Mint Strips",
-            "Stevia",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Malibu Rum are used in a Coconut Mojito?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Coconut Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet and Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Coconut Mojito?",
-          "answer": "Lime Wheel (1), Mint Strips"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Coconut Mojito:",
-          "answer": [
-            "Lime Wheel (1)",
-            "Mint Strips"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Coconut Mojito (comma-separated):",
-          "answer": [
-            "Lime Wheel (1)",
-            "Mint Strips"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Mojitos",
+      "section": "Tiki-Tropical",
       "drink": "Pineapple Mojito",
       "image": "images/pineapple_mojito.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Pineapple Mojito?",
-          "answer": "Sailor Jerry"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Pineapple Mojito?",
-          "answer": "Sailor Jerry, Mint Syrup, Sweet & Sour, Pineapple Juice, Soda Water, Mint Strips, Lime Wheels, Pineapple Skewer (With Tajin)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Pineapple Mojito:",
-          "answer": [
-            "Sailor Jerry",
-            "Mint Syrup",
-            "Sweet & Sour",
-            "Pineapple Juice",
-            "Soda Water",
-            "Mint Strips",
-            "Lime Wheels",
-            "Pineapple Skewer (With Tajin)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Pineapple Mojito (comma-separated):",
-          "answer": [
-            "Sailor Jerry",
-            "Mint Syrup",
-            "Sweet & Sour",
-            "Pineapple Juice",
-            "Soda Water",
-            "Mint Strips",
-            "Lime Wheels",
-            "Pineapple Skewer (With Tajin)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sailor Jerry are used in a Pineapple Mojito?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Mint Syrup are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pineapple Juice are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Pineapple Mojito?",
-          "answer": "Lime Wheel (3), Pineapple Skewer (With Tajin), Mint Strips"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Pineapple Mojito:",
-          "answer": [
-            "Lime Wheel (3)",
-            "Pineapple Skewer (With Tajin)",
-            "Mint Strips"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Pineapple Mojito (comma-separated):",
-          "answer": [
-            "Lime Wheel (3)",
-            "Pineapple Skewer (With Tajin)",
-            "Mint Strips"
-          ]
-        }
-      ]
+      "mainAlcohol": "Sailor Jerry",
+      "ingredients": [
+        { "name": "Sailor Jerry", "oz": 1.5 },
+        { "name": "Mint Syrup", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 1 },
+        { "name": "Pineapple Juice", "oz": 2 },
+        { "name": "Soda Water", "oz": 2 },
+        { "name": "Mint Strips" },
+        { "name": "Lime Wheels" }
+      ],
+      "garnishes": ["Lime Wheel (3)", "Pineapple Skewer (With Tajin)", "Mint Strips"]
     },
     {
-      "section": "Mojitos",
+      "section": "Tiki-Tropical",
       "drink": "Traditional Mojito",
       "image": "images/traditional_mojito.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Traditional Mojito?",
-          "answer": "Bicardi Limon"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Traditional Mojito?",
-          "answer": "Bicardi Limon, Mint Syrup, Sweet & Sour, Soda Water, Mint Strips, Lime Wheels"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Traditional Mojito:",
-          "answer": [
-            "Bicardi Limon",
-            "Mint Syrup",
-            "Sweet & Sour",
-            "Soda Water",
-            "Mint Strips",
-            "Lime Wheels"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Traditional Mojito (comma-separated):",
-          "answer": [
-            "Bicardi Limon",
-            "Mint Syrup",
-            "Sweet & Sour",
-            "Soda Water",
-            "Mint Strips",
-            "Lime Wheels"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Bicardi Limon are used in a Traditional Mojito?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Mint Syrup are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Traditional Mojito?",
-          "answer": "Lime Wheel (3), Mint Strips"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Traditional Mojito:",
-          "answer": [
-            "Lime Wheel (3)",
-            "Mint Strips"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Traditional Mojito (comma-separated):",
-          "answer": [
-            "Lime Wheel (3)",
-            "Mint Strips"
-          ]
-        }
-      ]
+      "mainAlcohol": "Bicardi Limon",
+      "ingredients": [
+        { "name": "Bicardi Limon", "oz": 1.5 },
+        { "name": "Mint Syrup", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 1 },
+        { "name": "Soda Water", "oz": 2 },
+        { "name": "Mint Strips" },
+        { "name": "Lime Wheels" }
+      ],
+      "garnishes": ["Lime Wheel (3)", "Mint Strips"]
     },
     {
       "section": "Mules",
       "drink": "Huckleberry Mule",
       "image": "images/huckleberry_mule.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Huckleberry Mule?",
-          "answer": "Wheatley Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Huckleberry Mule?",
-          "answer": "Wheatley Vodka, Ginger Beer Base, Huckleberry Puree, Soda Water, Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Huckleberry Mule:",
-          "answer": [
-            "Wheatley Vodka",
-            "Ginger Beer Base",
-            "Huckleberry Puree",
-            "Soda Water",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Huckleberry Mule (comma-separated):",
-          "answer": [
-            "Wheatley Vodka",
-            "Ginger Beer Base",
-            "Huckleberry Puree",
-            "Soda Water",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Wheatley Vodka are used in a Huckleberry Mule?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ginger Beer Base are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Huckleberry Puree are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Huckleberry Mule?",
-          "answer": "Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Huckleberry Mule:",
-          "answer": [
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Huckleberry Mule (comma-separated):",
-          "answer": [
-            "Lemon Peel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Wheatley Vodka",
+      "ingredients": [
+        { "name": "Wheatley Vodka", "oz": 1.5 },
+        { "name": "Ginger Beer Base", "oz": 1.5 },
+        { "name": "Huckleberry Puree", "oz": 1 },
+        { "name": "Soda Water", "oz": 3 }
+      ],
+      "garnishes": ["Lemon Peel"]
     },
     {
       "section": "Mules",
       "drink": "Moscow Mule",
       "image": "images/moscow_mule.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Moscow Mule?",
-          "answer": "Wheatley Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Moscow Mule?",
-          "answer": "Wheatley Vodka, Ginger Beer Base, Soda Water, Lime Wedges"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Moscow Mule:",
-          "answer": [
-            "Wheatley Vodka",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Lime Wedges"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Moscow Mule (comma-separated):",
-          "answer": [
-            "Wheatley Vodka",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Lime Wedges"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Wheatley Vodka are used in a Moscow Mule?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ginger Beer Base are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Moscow Mule?",
-          "answer": "Lime Wedge (2)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Moscow Mule:",
-          "answer": [
-            "Lime Wedge (2)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Moscow Mule (comma-separated):",
-          "answer": [
-            "Lime Wedge (2)"
-          ]
-        }
-      ]
+      "mainAlcohol": "Wheatley Vodka",
+      "ingredients": [
+        { "name": "Wheatley Vodka", "oz": 1.5 },
+        { "name": "Ginger Beer Base", "oz": 1.5 },
+        { "name": "Soda Water", "oz": 3 }
+      ],
+      "garnishes": ["Lime Wedge (2)"]
     },
     {
       "section": "Mules",
       "drink": "BackCountry Mule",
       "image": "images/backcountry_mule.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a BackCountry Mule?",
-          "answer": "Jack Daniels Whiskey"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a BackCountry Mule?",
-          "answer": "Jack Daniels Whiskey, Ginger Beer Base, Soda Water, Orange Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a BackCountry Mule:",
-          "answer": [
-            "Jack Daniels Whiskey",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Orange Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a BackCountry Mule (comma-separated):",
-          "answer": [
-            "Jack Daniels Whiskey",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Orange Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Jack Daniels Whiskey are used in a BackCountry Mule?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ginger Beer Base are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a BackCountry Mule?",
-          "answer": "Orange Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a BackCountry Mule:",
-          "answer": [
-            "Orange Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a BackCountry Mule (comma-separated):",
-          "answer": [
-            "Orange Wedge"
-          ]
-        }
-      ]
+      "mainAlcohol": "Jack Daniels Whiskey",
+      "ingredients": [
+        { "name": "Jack Daniels Whiskey", "oz": 1.5 },
+        { "name": "Ginger Beer Base", "oz": 1.5 },
+        { "name": "Soda Water", "oz": 3 }
+      ],
+      "garnishes": ["Orange Wedge"]
     },
     {
       "section": "Mules",
       "drink": "Irish Mule",
       "image": "images/irish_mule.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Irish Mule?",
-          "answer": "Jameson Whiskey"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Irish Mule?",
-          "answer": "Jameson Whiskey, Ginger Beer Base, Soda Water, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Irish Mule:",
-          "answer": [
-            "Jameson Whiskey",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Irish Mule (comma-separated):",
-          "answer": [
-            "Jameson Whiskey",
-            "Ginger Beer Base",
-            "Soda Water",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Jack Daniels Whiskey are used in a BackCountry Mule?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ginger Beer Base are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Irish Mule?",
-          "answer": "Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Irish Mule:",
-          "answer": [
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Irish Mule (comma-separated):",
-          "answer": [
-            "Lime Wheel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Jameson Whiskey",
+      "ingredients": [
+        { "name": "Jameson Whiskey", "oz": 1.5 },
+        { "name": "Ginger Beer Base", "oz": 1.5 },
+        { "name": "Soda Water", "oz": 3 }
+      ],
+      "garnishes": ["Lime Wheel"]
     },
     {
       "section": "Straight Up (Martinis)",
       "drink": "Cucumber Mint Martini",
       "image": "images/cucumber_mint.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Cucumber Mint Martini?",
-          "answer": "Cucumber Rain Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cucumber Mint Martini?",
-          "answer": "Cucumber Rain Vodka, Sweet & Sour, Cucumber Slices, Mint Strips"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cucumber Mint Martini:",
-          "answer": [
-            "Cucumber Rain Vodka",
-            "Sweet & Sour",
-            "Cucumber Slices",
-            "Mint Strips"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cucumber Mint Martini (comma-separated):",
-          "answer": [
-            "Cucumber Rain Vodka",
-            "Sweet & Sour",
-            "Cucumber Slices",
-            "Mint Strips"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Cucumber Rain Vodka are used in a Cucumber Mint Martini?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Cucumber Mint Martini?",
-          "answer": "Mint Strips, Cucmber Slices (3)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Cucumber Mint Martini:",
-          "answer": [
-            "Mint Strips",
-            "Cucmber Slices (3)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Cucumber Mint Martini (comma-separated):",
-          "answer": [
-            "Mint Strips",
-            "Cucmber Slices (3)"
-          ]
-        }
-      ]
+      "mainAlcohol": "Cucumber Rain Vodka",
+      "ingredients": [
+        { "name": "Cucumber Rain Vodka", "oz": 2 },
+        { "name": "Sweet & Sour", "oz": 1 },
+        { "name": "Cucumber Slices" },
+        { "name": "Mint Strips" }
+      ],
+      "garnishes": ["Mint Strips", "Cucumber Slices (3)"]
     },
     {
       "section": "Straight Up (Martinis)",
       "drink": "Cold Brew Martini",
+      "aliases": ["Coffee Martini"],
       "image": "images/cold_brew_martini.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Cold Brew Martini?",
-          "answer": "Tito's Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cold Brew Martini?",
-          "answer": "Tito's Vodka, Cold Brew, Creme de Cacao, Kahlua, Aquafaba"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cold Brew Martini:",
-          "answer": [
-            "Tito's Vodka",
-            "Cold Brew",
-            "Creme de Cacao",
-            "Kahlua",
-            "Aquafaba"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cold Brew Martini (comma-separated):",
-          "answer": [
-            "Tito's Vodka",
-            "Cold Brew",
-            "Creme de Cacao",
-            "Kahlua",
-            "Aquafaba"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Tito's Vodka are used in a Cold Brew Martini?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Cold Brew are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Creme de Cacao are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Kahlua are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Aquafaba are used?",
-          "answer": "0.5"
-        }
-      ]
+      "mainAlcohol": "Tito's Vodka",
+      "ingredients": [
+        { "name": "Tito's Vodka", "oz": 1.5 },
+        { "name": "Cold Brew", "oz": 1.5 },
+        { "name": "Creme de Cacao", "oz": 0.5 },
+        { "name": "Kahlua", "oz": 0.5 },
+        { "name": "Aquafaba", "oz": 0.5 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Straight Up (Martinis)",
       "drink": "Pink Lemon Drop Martini",
       "image": "images/pink_lemon_drop.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Pink Lemon Drop Martini?",
-          "answer": "Skyy Citrus Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Pink Lemon Drop Martini?",
-          "answer": "Skyy Citrus Vodka, Triple Sec, Pink Lemonade, Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Pink Lemon Drop Martini:",
-          "answer": [
-            "Skyy Citrus Vodka",
-            "Triple Sec",
-            "Pink Lemonade",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Pink Lemon Drop Martini (comma-separated):",
-          "answer": [
-            "Skyy Citrus Vodka",
-            "Triple Sec",
-            "Pink Lemonade",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Skyy Citrus Vodka are used in a Pink Lemon Drop Martini?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Triple Sec are used?",
-          "answer": "0.75"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pink Lemonade are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Pink Lemon Drop Martini?",
-          "answer": "Sugar Rim, Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Pink Lemon Drop Martini:",
-          "answer": [
-            "Sugar Rim",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Pink Lemon Drop Martini (comma-separated):",
-          "answer": [
-            "Sugar Rim",
-            "Lemon Peel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Skyy Citrus Vodka",
+      "ingredients": [
+        { "name": "Skyy Citrus Vodka", "oz": 1.5 },
+        { "name": "Triple Sec", "oz": 0.75 },
+        { "name": "Pink Lemonade", "oz": 2 }
+      ],
+      "garnishes": ["Sugar Rim", "Lemon Peel"]
     },
     {
       "section": "Straight Up (Martinis)",
       "drink": "Wild Blueberry Lemon Martini",
       "image": "images/wild_blueberry_lemon.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Wild Blueberry Lemon Martini?",
-          "answer": "Tito's Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Wild Blueberry Lemon Martini?",
-          "answer": "Tito's Vodka, Sweet & Sour, Pineapple Juice, Simple Syrup, Blue Berries, Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Wild Blueberry Lemon Martini:",
-          "answer": [
-            "Tito's Vodka",
-            "Sweet & Sour",
-            "Pineapple Juice",
-            "Simple Syrup",
-            "Blue Berries",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Wild Blueberry Lemon Martini (comma-separated):",
-          "answer": [
-            "Tito's Vodka",
-            "Sweet & Sour",
-            "Pineapple Juice",
-            "Simple Syrup",
-            "Blue Berries",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Tito's Vodka are used in a Wild Blueberry Lemon Martini?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pineapple Juice are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Simple Syrup are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Wild Blueberry Lemon Martini?",
-          "answer": "Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Wild Blueberry Lemon Martini:",
-          "answer": [
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Wild Blueberry Lemon Martini (comma-separated):",
-          "answer": [
-            "Lemon Peel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Tito's Vodka",
+      "ingredients": [
+        { "name": "Tito's Vodka", "oz": 1.5 },
+        { "name": "Sweet & Sour", "oz": 1 },
+        { "name": "Pineapple Juice", "oz": 0.5 },
+        { "name": "Simple Syrup", "oz": 0.5 },
+        { "name": "Blue Berries" }
+      ],
+      "garnishes": ["Lemon Peel"]
     },
     {
       "section": "Margaritas",
       "drink": "Classic Margarita",
+      "aliases": ["Lunazul Margarita"],
       "image": "images/classic_marg.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Classic Margarita?",
-          "answer": "Lunazul Reposado Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Classic Margarita?",
-          "answer": "Lunazul Reposado Tequila, Triple Sec, Sweet & Sour, Lime Wheel, Salt Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Classic Margarita:",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Classic Margarita (comma-separated):",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Lunazul Reposado Tequila are used in a Classic Margarita?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Triple Sec are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Classic Margarita?",
-          "answer": "Lime Wheel, Salt Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Classic Margarita:",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Classic Margarita (comma-separated):",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        }
-      ]
+      "mainAlcohol": "Lunazul Reposado Tequila",
+      "ingredients": [
+        { "name": "Lunazul Reposado Tequila", "oz": 1.5 },
+        { "name": "Triple Sec", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 2 }
+      ],
+      "garnishes": ["Lime Wheel", "Salt Rim"]
     },
     {
       "section": "Margaritas",
       "drink": "Mango Chile Margarita",
       "image": "images/mango_chile_marg.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Mango Chile Margarita?",
-          "answer": "Altos Reposado"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Mango Chile Margarita?",
-          "answer": "Altos Reposado, Ancho Reyes Chile Liqueur, Mango Juice, Sweet & Sour, Tajin Rim, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Mango Chile Margarita:",
-          "answer": [
-            "Altos Reposado",
-            "Ancho Reyes Chile Liqueur",
-            "Mango Juice",
-            "Sweet & Sour",
-            "Tajin Rim",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Mango Chile Margarita (comma-separated):",
-          "answer": [
-            "Altos Reposado",
-            "Ancho Reyes Chile Liqueur",
-            "Mango Juice",
-            "Sweet & Sour",
-            "Tajin Rim",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Altos Reposado are used in a Mango Chile Margarita?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ancho Reyes Chile Liqueur are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Mango Juice are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Mango Chile Margarita?",
-          "answer": "Lime Wheel, Tajin Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Mango Chile Margarita:",
-          "answer": [
-            "Lime Wheel",
-            "Tajin Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Mango Chile Margarita (comma-separated):",
-          "answer": [
-            "Lime Wheel",
-            "Tajin Rim"
-          ]
-        }
-      ]
+      "mainAlcohol": "Altos Reposado",
+      "ingredients": [
+        { "name": "Altos Reposado", "oz": 1.5 },
+        { "name": "Ancho Reyes Chile Liqueur", "oz": 0.5 },
+        { "name": "Mango Juice", "oz": 1 },
+        { "name": "Sweet & Sour", "oz": 1 }
+      ],
+      "garnishes": ["Lime Wheel", "Tajin Rim"]
     },
     {
       "section": "Margaritas",
       "drink": "Watermelon Margarita",
       "image": "images/watermelon_marg.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Watermelon Margarita?",
-          "answer": "Lunazul Reposado Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Watermelon Margarita?",
-          "answer": "Lunazul Reposado Tequila, Triple Sec, Sweet & Sour, Chamoy/Tajin Rim, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Watermelon Margarita:",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Chamoy/Tajin Rim",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Watermelon Margarita (comma-separated):",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Chamoy/Tajin Rim",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Watermelon Margarita Batch is used in a Watermelon Margarita?",
-          "answer": "4.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Watermelon Margarita?",
-          "answer": "Lime Wheel, Chamoy/Tajin Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Watermelon Margarita:",
-          "answer": [
-            "Lime Wheel",
-            "Chamoy/Tajin Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Watermelon Margarita (comma-separated):",
-          "answer": [
-            "Lime Wheel",
-            "Chamoy/Tajin Rim"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Margaritas",
-      "drink": "Jalapeno Cucumber Margarita",
-      "image": "images/jalepeno_cucumber_marg.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Jalapeno Cucumber Margarita?",
-          "answer": "Lunazul Reposado Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Jalapeno Cucumber Margarita?",
-          "answer": "Lunazul Reposado Tequila, Sweet & Sour, Midori, Jalapeno Cucumber Margarita Mix, Salt Rim, Cucumber Slice, Tamarind Candy Straw"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Jalapeno Cucumber Margarita:",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Sweet & Sour",
-            "Midori",
-            "Jalapeno Cucumber Margarita Mix",
-            "Salt Rim",
-            "Cucumber Slice",
-            "Tamarind Candy Straw"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Jalapeno Cucumber Margarita (comma-separated):",
-          "answer": [
-            "Lunazul Reposado Tequila",
-            "Sweet & Sour",
-            "Midori",
-            "Jalapeno Cucumber Margarita Mix",
-            "Salt Rim",
-            "Cucumber Slice",
-            "Tamarind Candy Straw"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Lunazul Reposado Tequila is used in a Jalapeno Cucumber Margarita?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Sweet & Sour is used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Midori is used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Jalapeno Cucumber Margarita Mix is used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Jalapeno Cucumber Margarita?",
-          "answer": "Cucumber Slice, Salt Rim, Tamarind Candy Straw"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Jalapeno Cucumber Margarita:",
-          "answer": [
-            "Cucumber Slice",
-            "Salt Rim",
-            "Tamarind Candy Straw"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Jalapeno Cucumber Margarita (comma-separated):",
-          "answer": [
-            "Cucumber Slice",
-            "Salt Rim",
-            "Tamarind Candy Straw"
-          ]
-        }
-      ]
+      "mainAlcohol": "Lunazul Reposado Tequila",
+      "ingredients": [
+        { "name": "Watermelon Margarita Batch", "oz": 4.5 }
+      ],
+      "garnishes": ["Lime Wheel", "Chamoy/Tajin Rim"]
     },
     {
       "section": "Margaritas",
       "drink": "Cadillac Margarita",
       "image": "images/cadilla_marg.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Cadillac Margarita?",
-          "answer": "Altos Reposado Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cadillac Margarita?",
-          "answer": "Altos Reposado Tequila, Triple Sec, Sweet & Sour, Grand Marnier(Float), Lime Wheel, Orange Wedge, Salt Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cadillac Margarita:",
-          "answer": [
-            "Altos Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Grand Marnier(Float)",
-            "Lime Wheel",
-            "Orange Wedge",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cadillac Margarita (comma-separated):",
-          "answer": [
-            "Altos Reposado Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Grand Marnier(Float)",
-            "Lime Wheel",
-            "Orange Wedge",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Altos Reposado Tequila are used in a Cadillac Margarita?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Triple Sec are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Grand Marnier(Float) are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Cadillac Margarita?",
-          "answer": "Lime Wheel, Salt Rim, Orange Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Cadillac Margarita:",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim",
-            "Orange Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Cadillac Margarita (comma-separated):",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim",
-            "Orange Wedge"
-          ]
-        }
-      ]
+      "mainAlcohol": "Altos Reposado Tequila",
+      "ingredients": [
+        { "name": "Altos Reposado Tequila", "oz": 1.5 },
+        { "name": "Triple Sec", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 2 },
+        { "name": "Grand Marnier (Float)", "oz": 0.5 }
+      ],
+      "garnishes": ["Lime Wheel", "Salt Rim", "Orange Wedge"]
     },
     {
-      "section": "House Libations",
+      "section": "Margaritas",
       "drink": "Patron Paloma",
       "image": "images/patron_paloma.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Patron Paloma?",
-          "answer": "Patron Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Patron Paloma?",
-          "answer": "Patron Tequila, Triple Sec, Sweet & Sour, Grapfruit Juice, Soda Water, Lime Wheel (Dehydrated), Salt Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Patron Paloma:",
-          "answer": [
-            "Patron Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Grapfruit Juice",
-            "Soda Water",
-            "Lime Wheel (Dehydrated)",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Patron Paloma (comma-separated):",
-          "answer": [
-            "Patron Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Grapfruit Juice",
-            "Soda Water",
-            "Lime Wheel (Dehydrated)",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Patron Tequila are used in a Patron Paloma?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Triple Sec are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Grapfruit Juice are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Patron Paloma?",
-          "answer": "Lime Wheel, Salt Rim"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Patron Paloma:",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Patron Paloma (comma-separated):",
-          "answer": [
-            "Lime Wheel",
-            "Salt Rim"
-          ]
-        }
-      ]
+      "mainAlcohol": "Patron Tequila",
+      "ingredients": [
+        { "name": "Patron Tequila", "oz": 1.5 },
+        { "name": "Triple Sec", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 1 },
+        { "name": "Grapefruit Juice", "oz": 1.5 },
+        { "name": "Soda Water", "oz": 2 }
+      ],
+      "garnishes": ["Lime Wheel (Dehydrated)", "Salt Rim"]
     },
     {
-      "section": "House Libations",
+      "section": "Tiki-Tropical",
       "drink": "Blue Hawaiian",
       "image": "images/blue_hawaiian.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Blue Hawaiian?",
-          "answer": "Ketel One Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Blue Hawaiian?",
-          "answer": "Ketel One Vodka, Myer's White Rum, Blue Curacao, Island Mix, Orange Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Blue Hawaiian:",
-          "answer": [
-            "Ketel One Vodka",
-            "Myer's White Rum",
-            "Blue Curacao",
-            "Island Mix",
-            "Orange Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Blue Hawaiian (comma-separated):",
-          "answer": [
-            "Ketel One Vodka",
-            "Myer's White Rum",
-            "Blue Curacao",
-            "Island Mix",
-            "Orange Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Blue Hawaiian Batch are used in a Blue Hawaiian?",
-          "answer": "6"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Blue Hawaiian?",
-          "answer": "Orange Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Blue Hawaiian:",
-          "answer": [
-            "Orange Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Blue Hawaiian (comma-separated):",
-          "answer": [
-            "Orange Peel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Ketel One Vodka",
+      "ingredients": [
+        { "name": "Blue-ish Hawaiian Batch", "oz": 6 }
+      ],
+      "garnishes": ["Orange Peel"]
     },
     {
-      "section": "House Libations",
+      "section": "Tiki-Tropical",
       "drink": "Rum Barrel Punch",
       "image": "images/rum_barrel.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Rum Barrel Punch?",
-          "answer": "Rum"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Rum Barrel Punch?",
-          "answer": "Captain Morgan Rum, Malibu Coconut Rum, Cruzan Rum, Island Punch Mix, Pomegranate Juice, Pineapple Leaf, Pineapple Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Rum Barrel Punch:",
-          "answer": [
-            "Captain Morgan Rum",
-            "Malibu Coconut Rum",
-            "Cruzan Rum",
-            "Island Punch Mix",
-            "Pomegranate Juice",
-            "Pineapple Leaf",
-            "Pineapple Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Rum Barrel Punch (comma-separated):",
-          "answer": [
-            "Captain Morgan Rum",
-            "Malibu Coconut Rum",
-            "Cruzan Rum",
-            "Island Punch Mix",
-            "Pomegranate Juice",
-            "Pineapple Leaf",
-            "Pineapple Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Captain Morgan Rum are used in a Rum Barrel Punch?",
-          "answer": "0.75"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Malibu Coconut Rum are used?",
-          "answer": "0.75"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Cruzan Rum are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Island Punch Mix are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pomegranate Juice are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Rum Barrel Punch?",
-          "answer": "Pineapple Leaf, Pineapple Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Rum Barrel Punch:",
-          "answer": [
-            "Pineapple Leaf",
-            "Pineapple Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Rum Barrel Punch (comma-separated):",
-          "answer": [
-            "Pineapple Leaf",
-            "Pineapple Skewer"
-          ]
-        }
-      ]
+      "mainAlcohol": "Rum",
+      "ingredients": [
+        { "name": "Captain Morgan Rum", "oz": 0.75 },
+        { "name": "Malibu Coconut Rum", "oz": 0.75 },
+        { "name": "Cruzan Rum", "oz": 0.5 },
+        { "name": "Island Punch Mix", "oz": 3 },
+        { "name": "Pomegranate Juice", "oz": 0.5 }
+      ],
+      "garnishes": ["Pineapple Leaf", "Pineapple Skewer"]
     },
     {
-      "section": "House Libations",
+      "section": "Signature",
       "drink": "Tequila Old Fashioned",
       "image": "images/tequila_old.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Tequila Old Fashioned?",
-          "answer": "Altos Reposado Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Tequila Old Fashioned?",
-          "answer": "Altos Reposado Tequila, Ancho Reyes Chile Liqeur, Creme de Cacao, Cointreau, Orange Juice, Bitters, Agave, Cinnamon, Chocolate Orange Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Tequila Old Fashioned:",
-          "answer": [
-            "Altos Reposado Tequila",
-            "Ancho Reyes Chile Liqeur",
-            "Creme de Cacao",
-            "Cointreau",
-            "Orange Juice",
-            "Bitters",
-            "Agave",
-            "Cinnamon",
-            "Chocolate Orange Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Tequila Old Fashioned (comma-separated):",
-          "answer": [
-            "Altos Reposado Tequila",
-            "Ancho Reyes Chile Liqeur",
-            "Creme de Cacao",
-            "Cointreau",
-            "Orange Juice",
-            "Bitters",
-            "Agave",
-            "Cinnamon",
-            "Chocolate Orange Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Tequila Old Fashioned Batch are used in a Tequila Old Fashioned?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Tequila Old Fashioned?",
-          "answer": "Chocolate Orange Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Tequila Old Fashioned:",
-          "answer": [
-            "Chocolate Orange Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Tequila Old Fashioned (comma-separated):",
-          "answer": [
-            "Chocolate Orange Skewer"
-          ]
-        }
-      ]
+      "mainAlcohol": "Altos Reposado Tequila",
+      "ingredients": [
+        { "name": "Tequila Old Fashioned Batch", "oz": 3 }
+      ],
+      "garnishes": ["Chocolate Orange Skewer"]
     },
     {
-      "section": "House Libations",
-      "drink": "Smoke Maple Bacon Old Fashioned",
+      "section": "Signature",
+      "drink": "Smoked Maple Bacon Old Fashioned",
       "image": "images/smoked_maple.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Smoke Maple Bacon Old Fashioned?",
-          "answer": "Tincup Whiskey"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Smoke Maple Bacon Old Fashioned?",
-          "answer": "Tincup Whiskey, Bacon Candy"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Smoke Maple Bacon Old Fashioned:",
-          "answer": [
-            "Tincup Whiskey",
-            "Bacon Candy"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Smoke Maple Bacon Old Fashioned (comma-separated):",
-          "answer": [
-            "Tincup Whiskey",
-            "Bacon Candy"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Smoked Maple Bacon Old Fashioned Batch are used in a Smoke Maple Bacon Old Fashioned?",
-          "answer": "3"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Smoke Maple Bacon Old Fashioned?",
-          "answer": "Bacon Candy"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Smoke Maple Bacon Old Fashioned:",
-          "answer": [
-            "Bacon Candy"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Smoke Maple Bacon Old Fashioned (comma-separated):",
-          "answer": [
-            "Bacon Candy"
-          ]
-        }
-      ]
+      "mainAlcohol": "Tincup Whiskey",
+      "ingredients": [
+        { "name": "Maple Bacon Bourbon", "oz": 3}
+      ],
+      "garnishes": ["Bacon Candy"]
     },
     {
-      "section": "House Libations",
+      "section": "Spritzes + Sangrias",
       "drink": "Elderflower Lemonade Spritz",
       "image": "images/elderflower.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Elderflower Lemonade Spritz?",
-          "answer": "Aviation Gin"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Elderflower Lemonade Spritz?",
-          "answer": "Aviation Gin, St. Germaine, Triple Sec, Lemonade Base, Blure Pea Tea Concentrate, Soda Water, Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Elderflower Lemonade Spritz:",
-          "answer": [
-            "Aviation Gin",
-            "St. Germaine",
-            "Triple Sec",
-            "Lemonade Base",
-            "Blure Pea Tea Concentrate",
-            "Soda Water",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Elderflower Lemonade Spritz (comma-separated):",
-          "answer": [
-            "Aviation Gin",
-            "St. Germaine",
-            "Triple Sec",
-            "Lemonade Base",
-            "Blure Pea Tea Concentrate",
-            "Soda Water",
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Elderflower Lemonade Batch are used in a Elderflower Lemonade Spritz?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Elderflower Lemonade Spritz?",
-          "answer": "Lemon Peel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Elderflower Lemonade Spritz:",
-          "answer": [
-            "Lemon Peel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Elderflower Lemonade Spritz (comma-separated):",
-          "answer": [
-            "Lemon Peel"
-          ]
-        }
-      ]
+      "mainAlcohol": "Aviation Gin",
+      "ingredients": [
+        { "name": "Elderflower Lemonade Batch", "oz": 3 },
+        { "name": "Soda Water", "oz": 1.5 }
+      ],
+      "garnishes": ["Lemon Peel"]
     },
     {
-      "section": "House Libations",
-      "drink": "Cowboy Colada",
-      "image": "images/cowboy_colada.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Cowboy Colada?",
-          "answer": "Rum"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cowboy Colada?",
-          "answer": "Sailor Jerry Rum, Myer's Rum, Malibu Rum, Coconut Water, Pineapple Juice, Sweet & Sour, Lemon Juice, Milk, Pineapple Leaf, Pineapple Skewer, Carbonated Sugar"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cowboy Colada:",
-          "answer": [
-            "Sailor Jerry Rum",
-            "Myer's Rum",
-            "Malibu Rum",
-            "Coconut Water",
-            "Pineapple Juice",
-            "Sweet & Sour",
-            "Lemon Juice",
-            "Milk",
-            "Pineapple Leaf",
-            "Pineapple Skewer",
-            "Carbonated Sugar"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cowboy Colada (comma-separated):",
-          "answer": [
-            "Sailor Jerry Rum",
-            "Myer's Rum",
-            "Malibu Rum",
-            "Coconut Water",
-            "Pineapple Juice",
-            "Sweet & Sour",
-            "Lemon Juice",
-            "Milk",
-            "Pineapple Leaf",
-            "Pineapple Skewer",
-            "Carbonated Sugar"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of the Cowboy Colada Batch are used in a Cowboy Colada?",
-          "answer": "6"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Cowboy Colada?",
-          "answer": "Pineapple Leaf, Pineapple Skewer (With Carbonated Sugar)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Cowboy Colada:",
-          "answer": [
-            "Pineapple Leaf",
-            "Pineapple Skewer (With Carbonated Sugar)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Cowboy Colada (comma-separated):",
-          "answer": [
-            "Pineapple Leaf",
-            "Pineapple Skewer (With Carbonated Sugar)"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "House Libations",
+      "section": "Spritzes + Sangrias",
       "drink": "Limoncello Basil Spritz",
       "image": "images/limoncello.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Limoncello Basil Spritz?",
-          "answer": "Limoncello"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Limoncello Basil Spritz?",
-          "answer": "Limoncello, St. Germaine, Freixenet, Soda Water, Lemon Wedge (No Seeds), Basil Leaf"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Limoncello Basil Spritz:",
-          "answer": [
-            "Limoncello",
-            "St. Germaine",
-            "Freixenet",
-            "Soda Water",
-            "Lemon Wedge (No Seeds)",
-            "Basil Leaf"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Limoncello Basil Spritz (comma-separated):",
-          "answer": [
-            "Limoncello",
-            "St. Germaine",
-            "Freixenet",
-            "Soda Water",
-            "Lemon Wedge (No Seeds)",
-            "Basil Leaf"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Limoncello are used in a Limoncello Basil Spritz?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of St. Germaine are used?",
-          "answer": "0.25"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Freixenet are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Limoncello Basil Spritz?",
-          "answer": "Lemon Wedge (No Seeds), Basil Leaf"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Limoncello Basil Spritz:",
-          "answer": [
-            "Lemon Wedge (No Seeds)",
-            "Basil Leaf"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Limoncello Basil Spritz (comma-separated):",
-          "answer": [
-            "Lemon Wedge (No Seeds)",
-            "Basil Leaf"
-          ]
-        }
-      ]
+      "mainAlcohol": "Limoncello",
+      "ingredients": [
+        { "name": "Limoncello", "oz": 1.5 },
+        { "name": "St. Germaine", "oz": 0.25 },
+        { "name": "Freixenet", "oz": 2 },
+        { "name": "Soda Water", "oz": 2 },
+        { "name": "Lemon Wedge", "amount": 1 }
+      ],
+      "garnishes": ["Basil Leaf"]
     },
     {
-      "section": "House Libations",
-      "drink": "Prickly Pear Sloshie",
+      "section": "Signature",
+      "drink": "POG Sloshie",
       "image": "images/prickly_sloshie.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Prickly Pear Sloshie?",
-          "answer": "Pantalones Tequila"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Prickly Pear Sloshie?",
-          "answer": "Pantalones Tequila, Triple Sec, Sweet & Sour, Prickly Pear Puree, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Prickly Pear Sloshie:",
-          "answer": [
-            "Pantalones Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Prickly Pear Puree",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Prickly Pear Sloshie (comma-separated):",
-          "answer": [
-            "Pantalones Tequila",
-            "Triple Sec",
-            "Sweet & Sour",
-            "Prickly Pear Puree",
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pantalones Tequila are used in a Prickly Pear Sloshie?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Triple Sec are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Prickly Pear Puree are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Prickly Pear Sloshie?",
-          "answer": "Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Prickly Pear Sloshie:",
-          "answer": [
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Prickly Pear Sloshie (comma-separated):",
-          "answer": [
-            "Lime Wheel"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "White Peach Sangria",
-      "image": "images/white_peach.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a White Peach Sangria?",
-          "answer": "White Wine"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a White Peach Sangria?",
-          "answer": "White Wine, Peach Juice, Peach Shnapps, Simple Syrup, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a White Peach Sangria:",
-          "answer": [
-            "White Wine",
-            "Peach Juice",
-            "Peach Shnapps",
-            "Simple Syrup",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a White Peach Sangria (comma-separated):",
-          "answer": [
-            "White Wine",
-            "Peach Juice",
-            "Peach Shnapps",
-            "Simple Syrup",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of White Sangria Mix are used in a White Peach Sangria?",
-          "answer": "6"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a White Peach Sangria?",
-          "answer": "Lemon Wedge, Lime Wedge, Orange Wedge (3)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a White Peach Sangria:",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a White Peach Sangria (comma-separated):",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "Red Pomegranate Sangria",
-      "image": "images/red_pom.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Red Pomegranate Sangria?",
-          "answer": "Red Wine"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Red Pomegranate Sangria?",
-          "answer": "Red Wine, Pomegranate Juice, Brandy, Simple Syrup, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Red Pomegranate Sangria:",
-          "answer": [
-            "Red Wine",
-            "Pomegranate Juice",
-            "Brandy",
-            "Simple Syrup",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Red Pomegranate Sangria (comma-separated):",
-          "answer": [
-            "Red Wine",
-            "Pomegranate Juice",
-            "Brandy",
-            "Simple Syrup",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Red Pomegranate Mix are used in a Red Pomegranate Sangria?",
-          "answer": "6"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Red Pomegranate Sangria?",
-          "answer": "Lemon Wedge, Lime Wedge, Orange Wedge (3)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Red Pomegranate Sangria:",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Red Pomegranate Sangria (comma-separated):",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "Raspberry Rose Sangria",
-      "image": "images/raspberry_rose.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Raspberry Rose Sangria?",
-          "answer": "Tinto Rey Rose"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Raspberry Rose Sangria?",
-          "answer": "Tinto Rey Rose, Cranberry Juice, Brandy, Creme De Cassis, Raspberry Puree, Soda Water, Orange Wedge, Lemon Wedge, Lime Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Raspberry Rose Sangria:",
-          "answer": [
-            "Tinto Rey Rose",
-            "Cranberry Juice",
-            "Brandy",
-            "Creme De Cassis",
-            "Raspberry Puree",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Raspberry Rose Sangria (comma-separated):",
-          "answer": [
-            "Tinto Rey Rose",
-            "Cranberry Juice",
-            "Brandy",
-            "Creme De Cassis",
-            "Raspberry Puree",
-            "Soda Water",
-            "Orange Wedge",
-            "Lemon Wedge",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Raspberry Rose Mix are used in a Raspberry Rose Sangria?",
-          "answer": "6"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Raspberry Rose Sangria?",
-          "answer": "Lemon Wedge, Lime Wedge, Orange Wedge (3)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Raspberry Rose Sangria:",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Raspberry Rose Sangria (comma-separated):",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge (3)"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "Sangria Sampler",
-      "image": "images/sangria_sampler.jpg",
-      "questions": [
-        {
-          "type": "free-response",
-          "question": "How many ounces of each sangria are in the Sangria Sampler?",
-          "answer": "2.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of each soda water are in the Sangria Sampler?",
-          "answer": "2.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Sangria Sampler?",
-          "answer": "Lemon Wedge, Lime Wedge, Orange Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Sangria Sampler:",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Sangria Sampler (comma-separated):",
-          "answer": [
-            "Lemon Wedge",
-            "Lime Wedge",
-            "Orange Wedge"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Brunch",
-      "drink": "DIY Mimosa Flight",
-      "image": "images/mimosa_flight.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the juices in the Mimosa Flight?",
-          "answer": "Peach-Raspberry, Orange-Grapefruit, Huckleberry"
-        },
-        {
-          
-          "type": "free-response",
-          "question": "How many ounces of each juice are in the Mimosa Flight?",
-          "answer": "6"
-        }
-      ]
-    },
-    {
-      "section": "House Libations",
-      "drink": "Rose Aperol Spritz",
-      "image": "images/raspberry_rose.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Rose Aperol Spritz?",
-          "answer": "Tinto Rey Rose"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Rose Aperol Spritz?",
-          "answer": "Tinto Rey Rose, Aperol, Sweet & Sour, Strawberry Puree, Soda Water, Orange Peel, Strawberry"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Rose Aperol Spritz:",
-          "answer": [
-            "Tinto Rey Rose",
-            "Aperol",
-            "Sweet & Sour",
-            "Strawberry Puree",
-            "Soda Water",
-            "Orange Peel",
-            "Strawberry"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Rose Aperol Spritz (comma-separated):",
-          "answer": [
-            "Tinto Rey Rose",
-            "Aperol",
-            "Sweet & Sour",
-            "Strawberry Puree",
-            "Soda Water",
-            "Orange Peel",
-            "Strawberry"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Rose Aperol Batch are used in a Rose Aperol Spritz?",
-          "answer": "5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "1"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Rose Aperol Spritz?",
-          "answer": "Orange Peel, Strawberry"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Rose Aperol Spritz:",
-          "answer": [
-            "Orange Peel",
-            "Strawberry"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Rose Aperol Spritz (comma-separated):",
-          "answer": [
-            "Orange Peel",
-            "Strawberry"
-          ]
-        }
-      ]
+      "mainAlcohol": "Pantalones Tequila",
+      "ingredients": [
+        { "name": "Pantalones Tequila", "oz": 1.5 },
+        { "name": "Triple Sec", "oz": 0.5 },
+        { "name": "Sweet & Sour", "oz": 1.5 },
+        { "name": "POG Mix", "oz": 1.5 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Brunch",
       "drink": "Mimosa",
       "image": "images/mimosa.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Mimosa?",
-          "answer": "Freixenet"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Mimosa?",
-          "answer": "Freixenet, Orange Juice"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Mimosa:",
-          "answer": [
-            "Freixenet",
-            "Orange Juice"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Mimosa (comma-separated):",
-          "answer": [
-            "Freixenet",
-            "Orange Juice"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Freixenet are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Orange Juice are used?",
-          "answer": "1"
-        }
-      ]
+      "mainAlcohol": "Freixenet",
+      "ingredients": [
+        { "name": "Freixenet", "bottle": 1 },
+        { "name": "Orange Juice", "oz": 3 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Brunch",
       "drink": "Peach Bellini",
       "image": "images/mimosa.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Peach Bellini?",
-          "answer": "Freixenet"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Peach Bellini?",
-          "answer": "Freixenet, Peach Juice, Peach Schnapps"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Peach Bellini:",
-          "answer": [
-            "Freixenet",
-            "Peach Schnapps",
-            "Peach Juice"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Peach Bellini (comma-separated):",
-          "answer": [
-            "Freixenet",
-            "Peach Schnapps",
-            "Peach Juice"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Freixenet are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Peach Schnapps are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Peach Juice are used?",
-          "answer": "1"
-        }
-      ]
+      "mainAlcohol": "Freixenet",
+      "ingredients": [
+        { "name": "Freixenet", "bottle": 1 },
+        { "name": "Peach Schnapps", "oz": 0.5 },
+        { "name": "Peach Juice", "oz": 1 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Brunch",
       "drink": "Michelada",
       "image": "images/michelada.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Michelada?",
-          "answer": "Whoa Nelli Lager"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Michelada?",
-          "answer": "Whoa Nelli Lager, Bloody Mary Mix, Lime Juice, Lime Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Michelada:",
-          "answer": [
-            "Whoa Nelli Lager",
-            "Bloody Mary Mix",
-            "Lime Juice",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Michelada (comma-separated):",
-          "answer": [
-            "Whoa Nelli Lager",
-            "MicheBloody Mary Mix",
-            "Lime Juice",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Beer are used?",
-          "answer": "12"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Michelada Mix are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Lime Juice are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Michelada?",
-          "answer": "Tajin Rim, Lime Wedge"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Michelada:",
-          "answer": [
-            "Tajin Rim",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Michelada (comma-separated):",
-          "answer": [
-            "Tajin Rim",
-            "Lime Wedge"
-          ]
-        }
-      ]
+      "mainAlcohol": "Whoa Nelli Lager",
+      "ingredients": [
+        { "name": "Whoa Nelli Lager", "oz": 12 },
+        { "name": "Bloody Mary Mix", "oz": 3 },
+        { "name": "Lime Juice", "oz": 0.5 }
+      ],
+      "garnishes": ["Tajin Rim", "Lime Wedge"]
     },
     {
       "section": "Brunch",
       "drink": "Hair of the Dog",
+      "aliases": ["Bloody Mary"],
       "image": "images/hair_of_the_dog.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Hair of the Dog?",
-          "answer": "Tito's Vodka"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Hair of the Dog?",
-          "answer": "Tito's Vodka, Bloody Mary Mix, Lime Wedge, Celery Stick, Green Beans, Olives"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Hair of the Dog:",
-          "answer": [
-            "Tito's Vodka",
-            "Bloody Mary Mix",
-            "Lime Wedge",
-            "Celery Stick",
-            "Green Beans",
-            "Olives"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Hair of the Dog (comma-separated):",
-          "answer": [
-            "Tito's Vodka",
-            "Bloody Mary Mix",
-            "Lime Wedge",
-            "Celery Stick",
-            "Green Beans",
-            "Olives"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Tito's Vodka are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Bloody Mary Mix are used?",
-          "answer": "5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Hair of the Dog?",
-          "answer": "Celery Stick, Lime Wedge, Green Beans, Olivess"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Hair of the Dog:",
-          "answer": [
-            "Celery Stick",
-            "Green Beans",
-            "Olives",
-            "Lime Wedge"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Hair of the Dog (comma-separated):",
-          "answer": [
-            "Celery Stick",
-            "Green Beans",
-            "Olives",
-            "Lime Wedge"
-          ]
-        }
-      ]
+      "mainAlcohol": "Gilbey's Vodka",
+      "ingredients": [
+        { "name": "Gilbey's Vodka", "oz": 1.5 },
+        { "name": "Bloody Mary Mix", "oz": 5 }
+      ],
+      "garnishes": ["Celery Stick", "Green Beans", "Olives", "Lime Wedge"]
+    },
+    {
+      "section": "Brunch",
+      "drink": "White Peach Sangria",
+      "aliases": ["White Sangria", "Peach Sangria"],
+      "image": "images/white_peach.jpg",
+      "mainAlcohol": "White Wine",
+      "ingredients": [
+        { "name": "White Peach Sangria Mix", "oz": 6 },
+        { "name": "Soda Water", "oz": 2 }
+      ],
+      "garnishes": ["Lemon Wedge", "Lime Wedge", "Orange Wedge (2)"]
+    },
+    {
+      "section": "Brunch",
+      "drink": "Red Pomegranate Sangria",
+      "aliases": ["red pom sangria", "pom sangria", "pomegranate red sangria"],
+      "image": "images/red_pom.jpg",
+      "mainAlcohol": "Red Wine",
+      "ingredients": [
+        { "name": "Pomegranate Red Sangria", "oz": 6 },
+        { "name": "Soda Water", "oz": 2 }
+      ],
+      "garnishes": ["Lemon Wedge", "Lime Wedge", "Orange Wedge (2)"]
+    },
+    {
+      "section": "Brunch",
+      "drink": "Raspberry Rose Sangria",
+      "aliases": ["Rose Sangria"],
+      "image": "images/raspberry_rose.jpg",
+      "mainAlcohol": "Tinto Rey Rose",
+      "ingredients": [
+        { "name": "Rose Sangria Mix", "oz": 6 },
+        { "name": "Soda Water", "oz": 2 }
+      ],
+      "garnishes": ["Lemon Wedge", "Lime Wedge", "Orange Wedge (2)"]
+    },
+    {
+      "section": "Brunch",
+      "drink": "Sangria Sampler",
+      "image": "images/sangria_sampler.jpg",
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Rose Sangria Mix", "oz": 6 },
+        { "name": "Pomegranate Red Sangria", "oz": 6 },
+        { "name": "White Peach Sangria Mix", "oz": 6 },
+        { "name": "Soda Water", "oz per sangria": 1 }
+      ],
+      "garnishes": ["Lemon Wedge", "Lime Wedge", "Orange Wedge"]
+    },
+    {
+      "section": "Brunch",
+      "drink": "DIY Mimosa Flight",
+      "aliases": ["Mimosa Flight"],
+      "image": "images/mimosa_flight.jpg",
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Peach-Raspberry Juice", "oz": 6 },
+        { "name": "Orange-Grapefruit Juice", "oz": 6 },
+        { "name": "Huckleberry Juice", "oz": 6 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Strawberry Citrus Refresher",
       "image": "images/strawberry_citrus_refresher.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Strawberry Citrus Refresher?",
-          "answer": "Sweet & Sour, Sprite, Soda Water, Strawberry Puree, Strawberry Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Strawberry Citrus Refresher:",
-          "answer": [
-            "Sweet & Sour",
-            "Sprite",
-            "Soda Water",
-            "Strawberry Puree",
-            "Strawberry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Strawberry Citrus Refresher (comma-separated):",
-          "answer": [
-            "Sweet & Sour",
-            "Sprite",
-            "Soda Water",
-            "Strawberry Puree",
-            "Strawberry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sprite are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Strawberry Puree are used?",
-          "answer": "1.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Strawberry Citrus Refresher?",
-          "answer": "Strawberry Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Strawberry Citrus Refresher:",
-          "answer": [
-            "Strawberry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Strawberry Citrus Refresher (comma-separated):",
-          "answer": [
-            "Strawberry Skewer"
-          ]
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Sweet & Sour", "oz": 2 },
+        { "name": "Sprite", "oz": 3 },
+        { "name": "Soda Water", "oz": 3 },
+        { "name": "Strawberry Puree", "oz": 1.5 }
+      ],
+      "garnishes": ["Strawberry Skewer"]
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Cucumber Lemon Refresher",
       "image": "images/cucumber_lemon_refresher.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cucumber Lemon Refresher?",
-          "answer": "Sweet & Sour, Simple Syrup, Soda Water, Cucumber Slices (4), Lemon Wedges (2)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cucumber Lemon Refresher:",
-          "answer": [
-            "Sweet & Sour",
-            "Simple Syrup",
-            "Soda Water",
-            "Cucumber Slices (3)",
-            "Lemon Wedges (2)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cucumber Lemon Refresher (comma-separated):",
-          "answer": [
-            "Sweet & Sour",
-            "Simple Syrup",
-            "Soda Water",
-            "Cucumber Slices (3)",
-            "Lemon Wedges (2)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Sweet & Sour are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Simple Syrup are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Cucumber Lemon Refresher?",
-          "answer": "Cucumber Slices (3), Lemon Wedges (2)"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Cucumber Lemon Refresher:",
-          "answer": [
-            "Cucumber Slices (3)",
-            "Lemon Wedges (2)"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Cucumber Lemon Refresher (comma-separated):",
-          "answer": [
-            "Cucumber Slices (3)",
-            "Lemon Wedges (2)"
-          ]
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Sweet & Sour", "oz": 3 },
+        { "name": "Simple Syrup", "oz": 2 },
+        { "name": "Soda Water", "oz": 5 }
+      ],
+      "garnishes": ["Cucumber Slices (3)", "Lemon Wedges (2)"]
+    },
+    {
+      "section": "Mocktails",
+      "drink": "Strawberry Jalapeno Mockarita",
+      "image": "images/straw_mock.jpg",
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Zero-Proof Mezcal", "oz": 2 },
+        { "name": "Sweet & Sour", "oz": 1.5 },
+        { "name": "Strawberry Puree", "oz": 0.25 },
+        { "name": "Mint Syrup", "oz": 0.25 },
+        { "name": "Strawberries", "amount": 3 },
+        { "name": "Jalapeno Slices", "amount": 5 },
+        { "name": "Soda Water", "oz": 1 }
+      ],
+      "garnishes": []
+    },
+    {
+      "section": "Mocktails",
+      "drink": "Pomegranate Sour Fauxtini",
+      "image": "images/pom_sour.jpg",
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Pomegranate Sour Mix", "oz": 5 },
+        { "name": "Aquafaba", "oz": 0.25 }
+      ],
+      "garnishes": ["Lime Wheel (Dehydrated)"]
+    },
+    {
+      "section": "Mocktails",
+      "drink": "Cold Brew Carajillo",
+      "image": "images/cold_brew_carajillo.jpg",
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Cold Brew", "oz": 5 },
+        { "name": "Carajillo Syrup", "oz": 1 },
+        { "name": "Aquafaba", "oz": 0.25 }
+      ],
+      "garnishes": ["Orange Wedge"]
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Tropical Refresher",
       "image": "images/tropical_refresher.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Tropical Refresher?",
-          "answer": "Island Mix, Pomegranate Juice, Soda Water, Pina Colada Mix, Mint Sprig"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Tropical Refresher:",
-          "answer": [
-            "Island Mix",
-            "Pomegranate Juice",
-            "Soda Water",
-            "Pina Colada Mix",
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Tropical Refresher (comma-separated):",
-          "answer": [
-            "Island Mix",
-            "Pomegranate Juice",
-            "Soda Water",
-            "Pina Colada Mix",
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Island Mix are used?",
-          "answer": "5"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Soda Water are used?",
-          "answer": "3"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pomegranate Juice are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Pina Colada Mix are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Tropical Refresher?",
-          "answer": "Mint Sprig"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Tropical Refresher:",
-          "answer": [
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Tropical Refresher (comma-separated):",
-          "answer": [
-            "Mint Sprig"
-          ]
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Island Mix", "oz": 5 },
+        { "name": "Pomegranate Juice", "oz": 1 },
+        { "name": "Soda Water", "oz": 3 },
+        { "name": "Pina Colada Mix", "oz": 0.5 }
+      ],
+      "garnishes": ["Mint Sprig"]
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Cold Brew Coffee",
       "image": "images/cold_brew.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Cold Brew Coffee?",
-          "answer": "Cold Brew"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Cold Brew Coffee:",
-          "answer": [
-            "Cold Brew"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Cold Brew Coffee (comma-separated):",
-          "answer": [
-            "Cold Brew"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Cold Brew are used?",
-          "answer": "10"
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Cold Brew", "oz": 10 }
+      ],
+      "garnishes": []
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Chilled Mint Latte",
+      "aliases": ["Mint Latte"],
       "image": "images/chilled_mint_latte.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Chilled Mint Latte?",
-          "answer": "Cold Brew, Mint Syrup, Ice Cream Base, Whipped Cream, Mint Sprig"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Chilled Mint Latte:",
-          "answer": [
-            "Cold Brew",
-            "Mint Syrup",
-            "Ice Cream Base", 
-            "Whipped Cream", 
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Chilled Mint Latte (comma-separated):",
-          "answer": [
-            "Cold Brew",
-            "Mint Syrup",
-            "Ice Cream Base", 
-            "Whipped Cream", 
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Cold Brew are used?",
-          "answer": "7"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Mint Syrup are used?",
-          "answer": "1"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Ice Cream Base are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Tropical Refresher?",
-          "answer": "Whipped Cream, Mint Sprig"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Tropical Refresher:",
-          "answer": [
-            "Whipped Cream",
-            "Mint Sprig"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Tropical Refresher (comma-separated):",
-          "answer": [
-            "Whipped Cream",
-            "Mint Sprig"
-          ]
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Cold Brew", "oz": 7 },
+        { "name": "Mint Syrup", "oz": 1 },
+        { "name": "Ice Cream Base", "oz": 2 }
+      ],
+      "garnishes": ["Whipped Cream", "Mint Sprig"]
     },
     {
       "section": "Non-Alcoholics",
       "drink": "Red Bull Mango-lada",
       "image": "images/red_bull_mango_lada.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Red Bull Mango-lada?",
-          "answer": "Red Bull, Mango Puree, Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Red Bull Mango-lada:",
-          "answer": [
-            "Red Bull",
-            "Mango Puree", 
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Red Bull Mango-lada (comma-separated):",
-          "answer": [
-            "Red Bull",
-            "Mango Puree", 
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Red Bull are used?",
-          "answer": "8.4"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Mango Puree are used?",
-          "answer": "2"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the garnishes for a Red Bull Mango-lada?",
-          "answer": "Lime Wheel"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnishes for a Red Bull Mango-lada:",
-          "answer": [
-            "Lime Wheel"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Red Bull Mango-lada (comma-separated):",
-          "answer": [
-            "Lime Wheel"
-          ]
-        }
-      ]
+      "mainAlcohol": null,
+      "ingredients": [
+        { "name": "Red Bull", "oz": 8.4 },
+        { "name": "Mango Puree", "oz": 2 }
+      ],
+      "garnishes": ["Lime Wheel"]
     },
     {
       "section": "Popular Drinks",
       "drink": "Westside Manhattan",
       "image": "images/westside_manhattan.jpg",
-      "questions": [
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the main alcohol in a Westside Manhattan?",
-          "answer": "High West Bourbon"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What are the ingredients in a Westside Manhattan?",
-          "answer": "High West Bourbon, Vermouth, Cherry Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select all ingredients in a Westside Manhattan:",
-          "answer": [
-            "High West Bourbon",
-            "Vermouth",
-            "Cherry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all ingredients in a Westside Manhattan (comma-separated):",
-          "answer": [
-            "High West Bourbon",
-            "Vermouth",
-            "Cherry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of High West Bourbon are used?",
-          "answer": "2"
-        },
-        {
-          "type": "free-response",
-          "question": "How many ounces of Vermouth are used?",
-          "answer": "0.5"
-        },
-        {
-          "type": "multiple-choice",
-          "difficulty": "easy",
-          "question": "What is the garnish for a Westside Manhattan?",
-          "answer": "Cherry Skewer"
-        },
-        {
-          "type": "multiple-select",
-          "difficulty": "medium",
-          "question": "Select the garnish for a Westside Manhattan:",
-          "answer": [
-            "Cherry Skewer"
-          ]
-        },
-        {
-          "type": "free-response",
-          "difficulty": "hard",
-          "question": "Type all garnishes for a Westside Manhattan (comma-separated):",
-          "answer": [
-            "Cherry Skewer"
-          ]
-        }
-      ]
+      "mainAlcohol": "High West Bourbon",
+      "ingredients": [
+        { "name": "High West Bourbon", "oz": 2 },
+        { "name": "Vermouth", "oz": 0.5 }
+      ],
+      "garnishes": ["Cherry Skewer"]
     }
   ]
 }

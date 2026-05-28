@@ -4,63 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bartending Flashcards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#4f46e5" />
-
-  <!-- Fuse.js for fuzzy search -->
+  <meta name="theme-color" content="#0d1117" />
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-
 </head>
 <body>
   <div class="container">
-    <h1>Bartending Flashcards</h1>
 
-    <!-- Section & difficulty selection -->
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-dot"></div>
+      <h1>Digital Bar Book</h1>
+      <div class="logo-dot"></div>
+    </header>
 
-    <!-- Drink search -->
-    <div id="search-drink" style="margin-bottom: 1em;">
-      <input type="text" id="drink-search-input" placeholder="Search for a drink..." style="width: 100%; padding: 0.5em; font-size: 16px;" />
-      <div id="search-suggestion" style="margin-top: 0.5em; font-style: italic;"></div>
-      <div id="drink-info" style="margin-top: 1em; border: 1px solid #ccc; padding: 1em; border-radius: 6px; background-color: #fafafa;"></div>
+    <!-- Version tag (injected by JS) -->
+    <div id="version-tag"></div>
+
+    <!-- ── Home screen ── -->
+    <div id="home-screen">
+      <p class="home-subtitle">What would you like to do?</p>
+      <div class="home-options">
+        <button class="home-btn" id="go-recipes-btn">
+          <span class="home-btn-icon">📖</span>
+          <span class="home-btn-label">Recipe Book</span>
+          <span class="home-btn-sub">Look up any drink</span>
+        </button>
+        <button class="home-btn" id="go-batches-btn">
+          <span class="home-btn-icon">🍶</span>
+          <span class="home-btn-label">Batches</span>
+          <span class="home-btn-sub">Batching recipes</span>
+        </button>
+        <button class="home-btn" id="go-quiz-btn">
+          <span class="home-btn-icon">🃏</span>
+          <span class="home-btn-label">Flashcards</span>
+          <span class="home-btn-sub">Quiz yourself</span>
+        </button>
+      </div>
     </div>
 
-    <div id="setup-screen">
-      <h2>Select Sections</h2>
-      <div id="section-options">
-        <!-- JS will dynamically generate checkboxes here -->
+    <!-- ── Recipe Book screen ── -->
+    <div id="recipe-screen" style="display:none;">
+      <button class="back-btn" id="back-from-recipes">← Back</button>
+      <div id="search-drink">
+        <input type="text" id="drink-search-input" placeholder="Search for a drink…" autocomplete="off" />
+        <div id="search-suggestion"></div>
+        <div id="drink-info"></div>
       </div>
+    </div>
 
-      <h2>Select Difficulty</h2>
+    <!-- ── Batch screen ── -->
+    <div id="batch-screen" style="display:none;">
+      <button class="back-btn" id="back-from-batches">← Back</button>
+
+      <!-- List view -->
+      <div id="batch-list"></div>
+
+      <!-- Detail view (hidden until a batch is tapped) -->
+      <div id="batch-detail" style="display:none;">
+        <button class="back-btn" id="back-from-batch-detail">← All Batches</button>
+        <div id="batch-detail-content"></div>
+      </div>
+    </div>
+
+    <div class="section-divider" style="display:none;"></div>
+
+    <!-- ── Flashcard setup screen ── -->
+    <div id="setup-screen" style="display:none;">
+      <button class="back-btn" id="back-from-quiz">← Back</button>
+      <h2>Sections</h2>
+      <div id="section-options"></div>
+
+      <h2>Difficulty</h2>
       <div id="difficulty-options">
-        <label><input type="radio" name="difficulty" value="easy" /> Easy</label><br />
-        <label><input type="radio" name="difficulty" value="medium" /> Medium</label><br />
-        <label><input type="radio" name="difficulty" value="hard" /> Hard</label>
+        <label><input type="radio" name="difficulty" value="easy" /><span>Easy</span></label>
+        <label><input type="radio" name="difficulty" value="medium" /><span>Medium</span></label>
+        <label><input type="radio" name="difficulty" value="hard" /><span>Hard</span></label>
       </div>
 
-      <button id="start-quiz-btn">Start Quiz</button>
+      <button id="start-quiz-btn">Start Quiz →</button>
     </div>
 
-    <!-- Drink image -->
+    <!-- Drink image (quiz) -->
     <div class="card-image" style="display:none;">
-      <img id="drink-image" src="images/placeholder.jpg" alt="Drink Image" width="300" />
+      <img id="drink-image" src="" alt="Drink" />
     </div>
 
-    <!-- Question header -->
+    <!-- Question title (quiz) -->
     <div class="question" style="display:none;">
-      <h2 id="question-text">Loading quiz...</h2>
+      <h2 id="question-text"></h2>
     </div>
 
-    <!-- Dynamic question content (buttons, inputs, checkboxes) -->
+    <!-- Dynamic quiz content -->
     <div id="options-container" style="display:none;"></div>
+
   </div>
 
   <script src="script.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log("✅ Service Worker Registered"))
-        .catch(err => console.error("Service Worker Error:", err));
+        .then(() => console.log("✅ SW Registered"))
+        .catch(err => console.error("SW Error:", err));
     }
   </script>
 </body>

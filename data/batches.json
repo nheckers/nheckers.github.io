@@ -1,0 +1,167 @@
+{
+  "batches": [
+    {
+      "name": "Watermelon Margarita Batch",
+      "image": "images/watermelon_batch.jpg",
+      "yield": "Half - 6 Quarts/ Full - 8 Quarts",
+      "ingredients": [
+        { "name": "Lunazul Reposado Tequila", "amount": "2 liters (Half) 2 (Full)" },
+        { "name": "Triple Sec", "amount": "3 cups (Half) 3 cups (Full)" },
+        { "name": "Watermelon Puree", "amount": "1.5 quarts (Half) 2 quarts (Full)" },
+        { "name": "Sweet & Sour", "amount": "2 quarts (Half) 2 quarts (Full)" }
+      ],
+      "notes": "None."
+    },
+    {
+      "name": "Blue Hawaiian Batch",
+      "image": "images/blue_batch.jpg",
+      "yield": "3.75 Quarts",
+      "ingredients": [
+        { "name": "Island Mix", "amount": "2.5 quarts" },
+        { "name": "Vodka", "amount": "15 ounces" },
+        { "name": "Myers's White Rum", "amount": "15 ounces" },
+        { "name": "Blue Curacao", "amount": "10 ounces" }
+      ],
+      "notes": "None"
+    },
+    {
+    "name": "Tequila Old Fashioned Batch",
+    "image": "images/tequila_old_batch.jpg",
+    "yield": "About 2.5 Quarts",
+    "ingredients": [
+      { "name": "Hot Water", "amount": "3 cups" },
+      { "name": "Agave Nectar", "amount": "1 cup" },
+      { "name": "Altos Reposado Tequila", "amount": "1 liter" },
+      { "name": "Ancho Reyes Chile Liqueur", "amount": "1/2 cup" },
+      { "name": "Creme de Cacao", "amount": "1 cup" },
+      { "name": "Cointreau", "amount": "1/4 cup" },
+      { "name": "Orange Juice", "amount": "1/2 cup" },
+      { "name": "Bitters", "amount": "1/2 teaspoon" },
+      { "name": "Cinnamon", "amount": "1/4 teaspoon" }
+    ],
+    "notes": "None"
+    },
+    {
+      "name": "White Peach Sangria Batch",
+      "image": "images/white_sang_batch.jpg",
+      "yield": "3 Quarts",
+      "ingredients": [
+        { "name": "White Wine", "amount": "2 quarts" },
+        { "name": "Peach Juice", "amount": "2 quarts" },
+        { "name": "Peach Schnapps", "amount": "3 cups" },
+        { "name": "Simple Syrup", "amount": "1 cup" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Red Pomegranate Sangria Batch",
+      "image": "images/red_pom_batch.jpg",
+      "yield": "3 Quarts",
+      "ingredients": [
+        { "name": "Red Wine", "amount": "2 quarts" },
+        { "name": "Pomegranate Juice", "amount": "2 quarts" },
+        { "name": "Brandy", "amount": "3 cups" },
+        { "name": "Simple Syrup", "amount": "1 cup" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Raspberry Rose Sangria Mix",
+      "image": "images/rasp_rose_batch.jpg",
+      "yield": "3.75 Quarts",
+      "ingredients": [
+        { "name": "Tinto Rey Rose", "amount": "2 quarts" },
+        { "name": "Cranberry Juice", "amount": "6 cups" },
+        { "name": "Raspberry Puree", "amount": "2 cups" },
+        { "name": "Creme de Cassis", "amount": "2 cup" },
+        { "name": "Brandy", "amount": "1 cup" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Bloody Mary Mix",
+      "image": "images/bloody_mix.jpg",
+      "yield": "3 Quarts",
+      "ingredients": [
+        { "name": "Tomato Juice", "amount": "92 ounces" },
+        { "name": "Tapatio", "amount": "1 ounce" },
+        { "name": "Tabasco", "amount": "1 ounce" },
+        { "name": "Worchestire Sauce", "amount": "5 ounces" },
+        { "name": "Horseradish", "amount": "2 tablespoons" },
+        { "name": "Black Pepper", "amount": "1 tablespoon" },
+        { "name": "Celery Salt", "amount": "2 tablespoons" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Island Punch Mix",
+      "image": "images/island_mix.jpg",
+      "yield": "Half - 1 Quart/ Full - 2 Quarts",
+      "ingredients": [
+        { "name": "Pineapple Juice", "amount": "12 ounces (Half) 24 ounces (Full)" },
+        { "name": "Orange Juice", "amount": "12 ounces (Half) 24 ounces (Full)" },
+        { "name": "Sweet & Sour", "amount": "4 ounces (Half) 8 ounces (Full)" },
+        { "name": "Simple Syrup", "amount": "4 ounces (Half) 8 ounces (Full)" }
+      ],
+      "notes": "None"
+    },
+
+    {
+      "name": "Huckleberry Juice",
+      "image": "images/huck_juice.jpg",
+      "yield": "30 Ounces",
+      "ingredients": [
+        { "name": "Huckleberry Puree", "amount": "10 ounces" },
+        { "name": "Cranberry Juice", "amount": "10 ounces" },
+        { "name": "Pomegranate Juice", "amount": "5 ounces" },
+        { "name": "Water", "amount": "5 ounces" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Peach-Raspberry Juice",
+      "image": "images/peach_rasp_juice.jpg",
+      "yield": "30 Ounces",
+      "ingredients": [
+        { "name": "Peach Juice", "amount": "25 ounces" },
+        { "name": "Raspberry Puree", "amount": "5 ounces" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Orange-Grapefruit Juice",
+      "image": "images/org_grp_juice.jpg",
+      "yield": "36 Ounces",
+      "ingredients": [
+        { "name": "Orange Juice", "amount": "4 cups" },
+        { "name": "Grapefruit Juice", "amount": "1/2 cup" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "Elderflower Lemonade Batch",
+      "image": "images/eld_flow_batch.jpg",
+      "yield": "About 1.5 Quarts",
+      "ingredients": [
+        { "name": "Aviation Gin", "amount": "2 cups" },
+        { "name": "Lemonade Base", "amount": "2 cups" },
+        { "name": "Water", "amount": "2 cups" },
+        { "name": "St. Germaine", "amount": "1/2 cup" },
+        { "name": "Triple Sec", "amount": "1/2 cup" },
+        { "name": "Blure Pea Tea Concentrate", "amount": "4 teaspoons" }
+      ],
+      "notes": "None"
+    },
+    {
+      "name": "House Salt Blend",
+      "image": "images/house_salt.jpg",
+      "yield": "53 Weight Ounces",
+      "ingredients": [
+        { "name": "Salt", "amount": "3 pounds" },
+        { "name": "Tajin", "amount": "3 weighted ounces" },
+        { "name": "Black Sea Salt", "amount": "2 weighted ounces" }
+      ],
+      "notes": "None"
+    }
+  ]
+}
