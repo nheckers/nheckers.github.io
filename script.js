@@ -12,7 +12,62 @@ function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-// === Build quiz questions from compact drink data ===
+// ── Navigation (set up immediately, no data dependency) ──────────────────────
+
+function setupNavigation() {
+  // Home → Recipe Book
+  document.getElementById("go-recipes-btn").onclick = () => {
+    document.getElementById("home-screen").style.display = "none";
+    document.getElementById("recipe-screen").style.display = "block";
+    document.getElementById("drink-search-input").focus();
+  };
+
+  // Home → Flashcards
+  document.getElementById("go-quiz-btn").onclick = () => {
+    document.getElementById("home-screen").style.display = "none";
+    document.getElementById("setup-screen").style.display = "block";
+  };
+
+  // Home → Batches
+  document.getElementById("go-batches-btn").onclick = () => {
+    document.getElementById("home-screen").style.display = "none";
+    document.getElementById("batch-screen").style.display = "block";
+    document.getElementById("batch-list").style.display = "block";
+    document.getElementById("batch-detail").style.display = "none";
+    document.getElementById("back-from-batches").style.display = "inline-flex";
+  };
+
+  // Recipe Book → Home
+  document.getElementById("back-from-recipes").onclick = () => {
+    document.getElementById("recipe-screen").style.display = "none";
+    document.getElementById("home-screen").style.display = "block";
+    document.getElementById("drink-search-input").value = "";
+    document.getElementById("search-suggestion").innerHTML = "";
+    document.getElementById("drink-info").innerHTML = "";
+  };
+
+  // Flashcard setup → Home
+  document.getElementById("back-from-quiz").onclick = () => {
+    document.getElementById("setup-screen").style.display = "none";
+    document.getElementById("home-screen").style.display = "block";
+  };
+
+  // Batch list → Home
+  document.getElementById("back-from-batches").onclick = () => {
+    document.getElementById("batch-screen").style.display = "none";
+    document.getElementById("home-screen").style.display = "block";
+  };
+
+  // Batch detail → Batch list
+  document.getElementById("back-from-batch-detail").onclick = () => {
+    document.getElementById("batch-detail").style.display = "none";
+    document.getElementById("batch-list").style.display = "block";
+    document.getElementById("back-from-batches").style.display = "inline-flex";
+  };
+}
+
+// ── Cards / Quiz data ────────────────────────────────────────────────────────
+
 function buildQuestions(drink, difficulty) {
   const questions = [];
   const name = drink.drink;
@@ -55,85 +110,43 @@ function buildQuestions(drink, difficulty) {
 }
 
 async function loadCards() {
-  const res = await fetch("data/cards.json");
-  const rawData = await res.json();
-  cards = rawData.drinks;
+  try {
+    const res = await fetch("data/cards.json");
+    if (!res.ok) throw new Error(`cards.json fetch failed: ${res.status}`);
+    const rawData = await res.json();
+    cards = rawData.drinks;
 
-  const ingSet = new Set();
-  const garnSet = new Set();
-  cards.forEach(card => {
-    card.ingredients.forEach(i => ingSet.add(i.name));
-    card.garnishes.forEach(g => garnSet.add(g));
-  });
-  ingredientsPool = [...ingSet];
-  garnishesPool = [...garnSet];
+    const ingSet = new Set();
+    const garnSet = new Set();
+    cards.forEach(card => {
+      card.ingredients.forEach(i => ingSet.add(i.name));
+      card.garnishes.forEach(g => garnSet.add(g));
+    });
+    ingredientsPool = [...ingSet];
+    garnishesPool = [...garnSet];
 
-  // Version tag
-  document.getElementById("version-tag").innerText = "v2";
+    document.getElementById("version-tag").innerText = "v2.0.0";
 
-  // Build section pill checkboxes
-  const uniqueSections = [...new Set(cards.map(c => c.section))];
-  const sectionContainer = document.getElementById("section-options");
-  uniqueSections.forEach(section => {
-    const label = document.createElement("label");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.value = section;
-    const span = document.createElement("span");
-    span.textContent = section;
-    label.appendChild(checkbox);
-    label.appendChild(span);
-    sectionContainer.appendChild(label);
-  });
+    // Build section pill checkboxes
+    const uniqueSections = [...new Set(cards.map(c => c.section))];
+    const sectionContainer = document.getElementById("section-options");
+    uniqueSections.forEach(section => {
+      const label = document.createElement("label");
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.value = section;
+      const span = document.createElement("span");
+      span.textContent = section;
+      label.appendChild(checkbox);
+      label.appendChild(span);
+      sectionContainer.appendChild(label);
+    });
 
-  document.getElementById("start-quiz-btn").onclick = initializeQuiz;
-  setupDrinkSearch();
-
-  // Home screen navigation
-  document.getElementById("go-recipes-btn").onclick = () => {
-    document.getElementById("home-screen").style.display = "none";
-    document.getElementById("recipe-screen").style.display = "block";
-    document.getElementById("drink-search-input").focus();
-  };
-
-  document.getElementById("go-quiz-btn").onclick = () => {
-    document.getElementById("home-screen").style.display = "none";
-    document.getElementById("setup-screen").style.display = "block";
-  };
-
-  document.getElementById("back-from-recipes").onclick = () => {
-    document.getElementById("recipe-screen").style.display = "none";
-    document.getElementById("home-screen").style.display = "block";
-    document.getElementById("drink-search-input").value = "";
-    document.getElementById("search-suggestion").innerHTML = "";
-    document.getElementById("drink-info").innerHTML = "";
-  };
-
-  document.getElementById("back-from-quiz").onclick = () => {
-    document.getElementById("setup-screen").style.display = "none";
-    document.getElementById("home-screen").style.display = "block";
-  };
-
-  // Batches navigation
-  document.getElementById("go-batches-btn").onclick = () => {
-    document.getElementById("home-screen").style.display = "none";
-    document.getElementById("batch-screen").style.display = "block";
-    document.getElementById("batch-list").style.display = "block";
-    document.getElementById("batch-detail").style.display = "none";
-  };
-
-  document.getElementById("back-from-batches").onclick = () => {
-    document.getElementById("batch-screen").style.display = "none";
-    document.getElementById("home-screen").style.display = "block";
-  };
-
-  document.getElementById("back-from-batch-detail").onclick = () => {
-    document.getElementById("batch-detail").style.display = "none";
-    document.getElementById("batch-list").style.display = "block";
-    document.getElementById("back-from-batches").style.display = "inline-flex";
-  };
-
-  loadBatches();
+    document.getElementById("start-quiz-btn").onclick = initializeQuiz;
+    setupDrinkSearch();
+  } catch (e) {
+    console.error("Failed to load cards:", e);
+  }
 }
 
 function initializeQuiz() {
@@ -249,7 +262,6 @@ function displayQuestion() {
       label.appendChild(checkBox);
       label.appendChild(text);
 
-      // Toggle visual state
       checkbox.addEventListener("change", () => {
         checkBox.style.background = checkbox.checked ? "var(--amber)" : "";
         checkBox.style.borderColor = checkbox.checked ? "var(--amber)" : "";
@@ -300,80 +312,8 @@ function nextQuestion() {
   }
 }
 
-window.onload = loadCards;
+// ── Drink Search ─────────────────────────────────────────────────────────────
 
-// === Batches ===
-
-let batches = [];
-
-async function loadBatches() {
-  try {
-    const res = await fetch("data/batches.json");
-    const data = await res.json();
-    batches = data.batches;
-    renderBatchList();
-  } catch (e) {
-    console.error("Failed to load batches:", e);
-  }
-}
-
-function renderBatchList() {
-  const list = document.getElementById("batch-list");
-  list.innerHTML = "";
-
-  if (batches.length === 0) {
-    list.innerHTML = `<p style="color:var(--text-muted);text-align:center;margin-top:32px;">No batches added yet.</p>`;
-    return;
-  }
-
-  batches.forEach((batch, index) => {
-    const card = document.createElement("div");
-    card.className = "batch-card";
-    card.innerHTML = `
-      <img class="batch-card-img" src="${batch.image}" alt="${batch.name}" onerror="this.style.display='none'" />
-      <div class="batch-card-body">
-        <span class="batch-card-name">${batch.name}</span>
-        ${batch.yield ? `<span class="batch-card-yield">${batch.yield}</span>` : ""}
-      </div>
-      <span class="batch-card-arrow">›</span>
-    `;
-    card.onclick = () => showBatchDetail(index);
-    list.appendChild(card);
-  });
-}
-
-function showBatchDetail(index) {
-  const batch = batches[index];
-  const detailContent = document.getElementById("batch-detail-content");
-
-  const ingredientsHTML = batch.ingredients.map(ing =>
-    `<li><span class="batch-ing-name">${ing.name}</span><span class="batch-ing-amount">${ing.amount || ""}</span></li>`
-  ).join("");
-
-  detailContent.innerHTML = `
-    <img class="batch-detail-img" src="${batch.image}" alt="${batch.name}" onerror="this.style.display='none'" />
-    <div class="batch-detail-body">
-      <h3 class="batch-detail-title">${batch.name}</h3>
-      ${batch.yield ? `<p class="batch-detail-yield">Yield: ${batch.yield}</p>` : ""}
-      <div class="batch-detail-section">
-        <span class="batch-section-label">Ingredients</span>
-        <ul class="batch-ing-list">${ingredientsHTML}</ul>
-      </div>
-      ${batch.notes ? `
-      <div class="batch-detail-section">
-        <span class="batch-section-label">Notes</span>
-        <p class="batch-notes">${batch.notes}</p>
-      </div>` : ""}
-    </div>
-  `;
-
-  document.getElementById("batch-list").style.display = "none";
-  document.getElementById("back-from-batches").style.display = "none";
-  document.getElementById("batch-detail").style.display = "block";
-}
-
-
-// === Drink Search ===
 let fuse;
 
 function setupDrinkSearch() {
@@ -429,3 +369,82 @@ function showDrinkInfo(drink) {
     </div>
   `;
 }
+
+// ── Batches ──────────────────────────────────────────────────────────────────
+
+let batches = [];
+
+async function loadBatches() {
+  try {
+    const res = await fetch("data/batches.json");
+    if (!res.ok) throw new Error(`batches.json fetch failed: ${res.status}`);
+    const data = await res.json();
+    batches = data.batches;
+    renderBatchList();
+  } catch (e) {
+    console.error("Failed to load batches:", e);
+  }
+}
+
+function renderBatchList() {
+  const list = document.getElementById("batch-list");
+  list.innerHTML = "";
+
+  if (batches.length === 0) {
+    list.innerHTML = `<p style="color:var(--text-muted);text-align:center;margin-top:32px;">No batches added yet.</p>`;
+    return;
+  }
+
+  batches.forEach((batch, index) => {
+    const card = document.createElement("div");
+    card.className = "batch-card";
+    card.innerHTML = `
+      <img class="batch-card-img" src="${batch.image}" alt="${batch.name}" onerror="this.style.display='none'" />
+      <div class="batch-card-body">
+        <span class="batch-card-name">${batch.name}</span>
+        ${batch.yield ? `<span class="batch-card-yield">${batch.yield}</span>` : ""}
+      </div>
+      <span class="batch-card-arrow">›</span>
+    `;
+    card.onclick = () => showBatchDetail(index);
+    list.appendChild(card);
+  });
+}
+
+function showBatchDetail(index) {
+  const batch = batches[index];
+  const detailContent = document.getElementById("batch-detail-content");
+
+  const ingredientsHTML = batch.ingredients.map(ing =>
+    `<li><span class="batch-ing-name">${ing.name}</span><span class="batch-ing-amount">${ing.amount || ""}</span></li>`
+  ).join("");
+
+  detailContent.innerHTML = `
+    <img class="batch-detail-img" src="${batch.image}" alt="${batch.name}" onerror="this.style.display='none'" />
+    <div class="batch-detail-body">
+      <h3 class="batch-detail-title">${batch.name}</h3>
+      ${batch.yield ? `<p class="batch-detail-yield">Yield: ${batch.yield}</p>` : ""}
+      <div class="batch-detail-section">
+        <span class="batch-section-label">Ingredients</span>
+        <ul class="batch-ing-list">${ingredientsHTML}</ul>
+      </div>
+      ${batch.notes && batch.notes !== "None" && batch.notes !== "None." ? `
+      <div class="batch-detail-section">
+        <span class="batch-section-label">Notes</span>
+        <p class="batch-notes">${batch.notes}</p>
+      </div>` : ""}
+    </div>
+  `;
+
+  document.getElementById("batch-list").style.display = "none";
+  document.getElementById("back-from-batches").style.display = "none";
+  document.getElementById("batch-detail").style.display = "block";
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────────
+
+window.onload = () => {
+  setupNavigation(); // always runs first, no data dependency
+  loadCards();       // async, populates search + quiz
+  loadBatches();     // async, populates batch list
+};
